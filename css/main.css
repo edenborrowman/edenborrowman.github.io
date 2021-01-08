@@ -60,5 +60,10 @@ img {
     border: 5px solid white;
 
 }
+.subscript {
+    font-size: .7em;
+    padding: .5rem;
+    text-align: center;
 
+}
      
