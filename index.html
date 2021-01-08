@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <title>Index</title>
-</head>
-<body>
- <h1>Eden Borrowman</h1>
-</body>
-</html>  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Eden Borrowman's assignment portal for Web Frontend Development class WDD230 at Brigham Young University-Idaho."
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <title>Eden's Assignment Portal</title>
+  </head>
+  <body>
+    <header class="mainhead">
+      <img class="portalpic" src="images/zooselfie.jpeg" alt="Photo of Eden" />
+      <h1 class="headline-style-1">Eden</h1>
+      <h1 class="headline-style-2">Borrowman</h1>
+      
+    </header>
+    <main>
+      <h2>CIT230 Assignment Portal</h2>
+      <hr>
+      <ul class="assignments">
+        <li>Lesson 02: <a href="https://www.byui.edu/">link</a></li>
+        <li>Lesson 03: <a href="https://www.byui.edu/">link</a></li>
+        <li>Lesson 04: <a href="https://www.byui.edu/">link</a></li>
+      </ul>
+    </main>
+    <footer>
+      &copy; <span id="currentyear"></span> Eden Borrowman
+      | Pennsylvania |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a> | Today's
+      Date: <span id="currentdate"></span><br /><br>
+      Last Modified:
+      <span id="lastModified"></span>
+      <script>
+        let daynames = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        let months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        let d = new Date();
+        let dayName = daynames[d.getDay()];
+        let monthName = months[d.getMonth()];
+        let fulldate =
+          dayName +
+          ", " +
+          monthName +
+          " " +
+          d.getDate() +
+          ", " +
+          d.getFullYear();
+
+        document.getElementById("currentdate").textContent = fulldate;
+
+        document.getElementById("currentyear").textContent = d.getFullYear();
+
+        let oLastModif = new Date(document.lastModified);
+        document.getElementById("lastModified").textContent = oLastModif;
+      </script>
+    </footer>
+  </body>
+</html>

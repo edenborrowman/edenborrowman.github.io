@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Questrial&display=swap');
+
+</style>;
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  
+}
+
+header,
+main,
+footer {
+  margin: 1.25rem auto;
+  max-width: 760px;
+  font-family: 'Questrial', sans-serif; 
+}
+
+header, footer {
+  background-color: #88b0bf;
+  color: white;
+  text-align: left;
+}
+h2, ul, li {
+  font-family: 'Questrial', sans-serif; 
+  color: #204358;
+}
+
+  header {
+  padding: 1.5rem;
+}
+
+footer {
+    font-size: .9em;
+    padding: 1.5rem;
+    text-align: center;
+    
+}
+
+.headline-style-1 {
+    font-family: 'Questrial', sans-serif; 
+    text-align: left;
+    font-size: 2.5em;
+    color: #204358;
+    position: absolute;
+}
+    
+.headline-style-2 {
+    font-family: 'Allura';
+    color: white;
+    text-align: left;
+    font-size: 5em;
+    margin: 25px 15px 0 60px;
+}
+
+img {
+    width: 250px;
+    float: right;
+    margin: -10px;
+    border: 5px solid white;
+
+}
+
+     
