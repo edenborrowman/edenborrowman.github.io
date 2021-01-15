@@ -1,0 +1,60 @@
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+header,
+main,
+footer {
+  margin: 1.25rem auto;
+  max-width: 760px;
+  font-family: "Questrial", sans-serif;
+}
+
+header,
+footer {
+  background-color: #88b0bf;
+  color: white;
+  text-align: left;
+}
+h2,
+ul,
+li {
+  font-family: "Questrial", sans-serif;
+  color: #204358;
+}
+
+header {
+  padding: 1.5rem;
+}
+
+footer {
+  font-size: 0.9em;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.headline-style-1 {
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  color: #204358;
+}
+
+.headline-style-2 {
+  font-family: "Allura";
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border: 5px solid white;
+}
+.subscript {
+  font-size: 0.7em;
+  padding: 0.5rem;
+  text-align: center;
+}

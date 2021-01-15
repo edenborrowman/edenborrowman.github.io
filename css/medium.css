@@ -1,0 +1,24 @@
+@media only screen and (min-width: 32.5em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .headline-style-1 {
+    font-size: 2.5em;
+    position: absolute;
+    text-align: left;
+  }
+
+  .headline-style-2 {
+    font-size: 5em;
+    margin: 25px 15px 0 60px;
+    text-align: left;
+  }
+  img {
+    float: right;
+    margin: -10px;
+    }
+  }
+}
