@@ -9,23 +9,21 @@ footer {
   justify-content: center;
 }
 main {
-    display: block;
-    text-align: center;
-  
+  display: block;
+  text-align: center;
 }
 
 section {
-    border-style: solid;
-    border-width: 1px;
-    border-color:#204358;
-    background-color:#204358; 
-  } 
+  border-style: solid;
+  border-width: 1px;
+  border-color: #204358;
+  background-color: #204358;
+}
 
 header {
   background-color: #204358;
   padding: 20px;
 }
-
 
 h1,
 h2,
@@ -50,20 +48,19 @@ h2 {
 
 p {
   font-family: "Raleway", serif;
-  color:white;
+  color: white;
   margin: 2em;
   text-align: left;
 }
 
 .intro {
-    color:#204358;
+  color: #204358;
 }
-
 
 img {
   width: 300px;
   height: auto;
- S}
+}
 
 .myname {
   font-size: 1em;
@@ -84,7 +81,7 @@ footer {
 }
 
 a {
-  color: rgb(119, 163, 221);
+  color: rgb(146, 193, 255);
   background-color: #204358;
 }
 
