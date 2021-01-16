@@ -1,7 +1,8 @@
 /*CSS for large screen view*/
 
-@media (min-widgh: 60em) {
+@media (min-width: 60em) {
   main {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -16,17 +17,17 @@
     grid-column: 3;
   }
 
-  /* section-child(3) {
-    grid-column: span 1;
-  } */
-
   h1 {
     font-size: 3.5em;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .myname {
     font-size: 2em;
+  }
+
+  .intro {
+    grid-column: 1 / span 3;
   }
 }

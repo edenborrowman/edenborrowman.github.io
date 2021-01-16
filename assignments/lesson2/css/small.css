@@ -4,23 +4,13 @@ header,
 body,
 footer {
   margin: 1.25rem auto;
-  max-width: 900px;
+  max-width: 1000px;
   background-color: white;
+  justify-content: center;
 }
 header {
   background-color: #204358;
   padding: 20px;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: center;
-}
-
-section {
-  padding: 1em;
 }
 
 h1,
@@ -47,6 +37,7 @@ h2 {
 p {
   font-family: "Raleway", serif;
   color: #204358;
+  margin: 2em;
 }
 
 img {

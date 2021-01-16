@@ -4,6 +4,7 @@
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
   }
 
   .sec1 {
@@ -25,5 +26,9 @@
   }
   .myname {
     font-size: 1.75em;
+  }
+
+  .intro {
+    grid-column: 1 / span 2;
   }
 }
