@@ -64,9 +64,14 @@ footer {
 }
 
 a {
-  color: rgb(206, 206, 0);
+  color: rgb(85, 137, 206);
+  background-color: #204358;
 }
 
 a:visited {
-  color: rgb(134, 181, 252);
+  color: rgb(237, 248, 175);
+}
+
+a:hover {
+  color: rgb(184, 47, 47);
 }
