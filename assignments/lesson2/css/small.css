@@ -11,13 +11,21 @@ footer {
 main {
     display: block;
     text-align: center;
-    
+  
 }
+
+section {
+    border-style: solid;
+    border-width: 1px;
+    border-color:#204358;
+    background-color:#204358; 
+  } 
 
 header {
   background-color: #204358;
   padding: 20px;
 }
+
 
 h1,
 h2,
@@ -42,10 +50,15 @@ h2 {
 
 p {
   font-family: "Raleway", serif;
-  color: #204358;
+  color:white;
   margin: 2em;
   text-align: left;
 }
+
+.intro {
+    color:#204358;
+}
+
 
 img {
   width: 300px;
