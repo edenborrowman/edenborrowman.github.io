@@ -1,6 +1,6 @@
 /* CSS for tablet view*/
 
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;

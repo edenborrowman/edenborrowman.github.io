@@ -1,6 +1,6 @@
 /*CSS for large screen view*/
 
-@media only screen and (min-widgh: 60em) {
+@media (min-widgh: 60em) {
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }
