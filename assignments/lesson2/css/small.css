@@ -8,6 +8,12 @@ footer {
   background-color: white;
   justify-content: center;
 }
+main {
+    display: block;
+    text-align: center;
+    
+}
+
 header {
   background-color: #204358;
   padding: 20px;
@@ -38,12 +44,13 @@ p {
   font-family: "Raleway", serif;
   color: #204358;
   margin: 2em;
+  text-align: left;
 }
 
 img {
   width: 300px;
   height: auto;
-}
+ S}
 
 .myname {
   font-size: 1em;
