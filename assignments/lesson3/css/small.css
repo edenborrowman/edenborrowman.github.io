@@ -1,10 +1,9 @@
 body {
   font-size: 16px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Libre Baskerville", serif;
 }
 
-header,
-footer {
+header {
   background-color: #607338;
   display: flex;
   flex-flow: column;
@@ -27,7 +26,14 @@ footer {
 .logobox {
   background: white;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
 h1 {
   color: white;
   font-size: 2rem;
@@ -38,7 +44,7 @@ h2 {
 }
 
 p {
-  font-family: "Bodoni Moda", serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 nav {
@@ -83,10 +89,7 @@ a:hover {
 }
 
 .screenshot {
-  width: 800px;
-}
-footer {
-  color: white;
+  width: 100%;
 }
 
 .subscript {
@@ -100,4 +103,19 @@ div.typography {
   margin: 50px 50px 50px 50px;
   border-color: #2a3640;
   border-width: 15px;
+}
+
+footer {
+  background-color: #607338;
+  font-size: 0.75em;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+}
+
+.palette {
+  width: 80%;
 }
