@@ -13,8 +13,8 @@ footer {
 
 header {
   color: #607338;
-  display: flex;
-  flex-flow: column;
+  /* display: flex;
+  flex-flow: column; */
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -29,6 +29,8 @@ header {
 header img {
   width: 100px;
   height: auto;
+  float: left;
+  padding-right: 5%;
 }
 
 section.headings1 {
@@ -74,9 +76,7 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-nav ul.hide {
-  display: none;
-}
+
 nav ul li a {
   display: block;
   text-decoration: none;
@@ -90,6 +90,7 @@ nav ul li.active a {
   background-color: rgba(153, 180, 191, 0.5);
   color: white;
 }
+
 .heroimg {
   max-width: 100%;
   max-height: 30em;
@@ -128,6 +129,10 @@ footer a:visited {
 
 footer a {
   color: #607338;
+}
+
+section.headings1 {
+  text-align: left;
 }
 
 .clearfix:after {

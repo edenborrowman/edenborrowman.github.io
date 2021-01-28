@@ -15,4 +15,11 @@
     margin-top: -80px;
     font-size: 0.8rem;
   }
+
+  section.headings1 {
+    text-align: left;
+  }
+  #headerimg_small {
+    padding-right: 2em;
+  }
 }

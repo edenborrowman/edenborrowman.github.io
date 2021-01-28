@@ -11,7 +11,7 @@
   }
 
   nav ul.hide {
-      display: flex;
+    display: flex;
   }
   nav ul li {
     flex: 1 1 100%;
@@ -24,27 +24,40 @@
   }
 
   header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 10px 10px;
-  grid-gap: 3em;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 10px 10px;
+    grid-gap: 3em;
+  }
 
-.headings1 {
-  display: grid;
-  grid-column: 2/6;
-  font-size: 2.5rem;
-  padding-top: 50px;
-}
+  .headings1 {
+    display: grid;
+    grid-column: 2/6;
+    font-size: 2.5rem;
+    padding-top: 50px;
+  }
+  section.headings1 {
+    text-align: left;
+  }
+  .headings2 {
+    display: grid;
+    grid-column: 1/6;
+    text-align: center;
+  }
+  h2.headertitle {
+    font-size: 2em;
+  }
+  div.headings2 {
+    margin-top: -50px;
+  }
 
-.headings2 {
-  display: grid;
-  grid-column: 1/6;
-  text-align: center;
-  font-size: 1rem;
-}
+  nav {
+    grid-column: 1/6;
+    width: 100%;
+  }
 
-nav {
-  grid-column: 1/6;
-  width: 100%;
+  #headerimg_small {
+    padding-right: 2em;
+    width: 200px;
+  }
 }
