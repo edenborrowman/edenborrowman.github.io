@@ -1,0 +1,18 @@
+@media only screen and (min-width: 35rem) {
+  #headerimg_small {
+    width: 150px;
+  }
+
+  .headings1 {
+    font-size: 1.8rem;
+  }
+
+  section.headings1 {
+    margin-top: -20px;
+  }
+
+  div.headings2 {
+    margin-top: -80px;
+    font-size: 0.8rem;
+  }
+}

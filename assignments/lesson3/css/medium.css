@@ -5,8 +5,14 @@
   nav ul li {
     flex: 1 1 100%;
 
-  h1 {
+  nav a {
   font-size: 3rem;
   }
+
+  #logobox {
+    float: left;
+  }
+
+  
 
 }

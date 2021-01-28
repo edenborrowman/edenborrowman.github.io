@@ -20,12 +20,18 @@ header {
   padding: 10px;
 }
 
-#logo {
-  width: 175px;
-}
 .logobox {
   background: white;
 }
+
+#headerlogo {
+  width: 175px;
+}
+
+#logo {
+  width: 175px;
+}
+
 h1,
 h2,
 h3,
@@ -49,7 +55,6 @@ p {
 
 nav {
   background-color: white;
-  text-align: justify;
   width: 100%;
 }
 
@@ -74,7 +79,7 @@ a:hover {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
 }
 
 .demo {

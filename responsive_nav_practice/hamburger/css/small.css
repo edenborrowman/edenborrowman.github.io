@@ -1,0 +1,59 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav button {
+  margin: 0.2rem 2%; /* that's .2 rem top and bottom, 2% left and right*/
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem; /*font size needs to be at least 44px to fit finger as per Apple*/
+  color: #555;
+}
+
+nav {
+  background-color: #ccc;
+  font-family: Verdana, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem 2%;
+  color: #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  /* the border-top stuff is "tricky css." The "a" of RGBA lets you control the transparency of your color, so here, it just makes the text black--that's the 0, 0, 0--and displayed at 30%. If the background were changed to another color, it would still look good since it'd just darken that. Cool trick to remember.*/
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

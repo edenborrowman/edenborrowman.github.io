@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width,initial-scale=1.0" />
+    <title>Preston Weather Information</title>
+    <meta
+      name="A community-friendly page with weather, news, and information for the Preston, Idaho community."
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <picture>      
+        <img
+          id="headerimg_small"
+          src="images/pennridge_outdoor_logo_round_white.png"
+          alt="The Pennridge Outdoor logo, a weathervane"
+        /></picture>
+       <section class="headings1"><h1 class="headertitle">Pennridge Outdoor</h1><br>
+      </section>
+      <div class="headings2"><h2 class="headertitle">A Community site for weather, news, and information</h2>
+      </div>
+      <nav id="headernav">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</href></a></li>
+          <li class="active"><a href="preston-4.html">Preston</href></a></li>
+          <li><a href="#">Soda Springs</href></a></li>
+          <li><a href="#">Fish Haven</href></a></li>
+          <li><a href="#">Storm Center</href></a></li>
+          <li><a href="#">Gallery</href></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Preston, Idaho</h2>
+      <img class="heroimg" src="images/prestonspring.jpg" alt="scenic Idaho" />
+      <div class="contentbox">Weather Summary</div>
+      <div class="contentbox">5 Day Forecast</div>
+      <div class="contentbox">Article</div>
+      <div class="contentbox">Content Information</div>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+      <a class="footlink" href="https://www.byui.edu/online"
+        >BYU-I Online Learning</a></p><br /><br>
+      <span id="currentdate"></span><br />
+    </footer>
+    <script src="js/currentdate.js">
+    </script>    
+  </body>
+</html>
