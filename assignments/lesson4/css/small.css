@@ -17,7 +17,7 @@ header {
   flex-flow: column; */
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding-top: 10px;
   background-color: #2a3640;
 }
 
@@ -31,10 +31,12 @@ header img {
   height: auto;
   float: left;
   padding-right: 5%;
+  padding-left: 2%;
 }
 
 section.headings1 {
   text-align: center;
+  margin-top: -15px;
 }
 
 .headings1 {
@@ -103,6 +105,10 @@ nav ul li a:hover {
 
 nav ul.hide {
   display: none;
+}
+
+h2.city {
+  padding-top: 20px;
 }
 
 .contentbox {
