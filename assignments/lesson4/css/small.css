@@ -125,8 +125,10 @@ footer {
   color: white;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+  width: 100%;
 }
 
 footer a:visited {
