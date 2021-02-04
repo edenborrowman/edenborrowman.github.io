@@ -11,5 +11,6 @@ window.onload = function toggleAnnouncement() {
   if (q != 5) {
     document.getElementById("pancakes").classList.toggle("hide");
   }
-  console.log(q);
+  //A test to make sure it worked
+  //   console.log(q);
 };
