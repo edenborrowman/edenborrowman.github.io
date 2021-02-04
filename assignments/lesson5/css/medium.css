@@ -1,0 +1,29 @@
+@media only screen and (min-width: 35rem) {
+  #headerimg_small {
+    width: 150px;
+  }
+
+  section.headings1 {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  div.headings2 {
+    font-size: 0.8rem;
+  }
+
+  section.headings1 {
+    text-align: left;
+  }
+
+  #headerimg_small {
+    padding-right: 2em;
+    width: 200px;
+  }
+
+  .weathersummary {
+    top: 5rem;
+    left: 2rem;
+    padding: 1rem;
+  }
+}
