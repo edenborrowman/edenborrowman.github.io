@@ -30,3 +30,10 @@ let fulldate =
 document.getElementById("currentdate").textContent = fulldate;
 
 document.getElementById("currentyear").textContent = d.getFullYear();
+
+let oLastModif = new Date(document.lastModified);
+document.getElementById("lastModified").textContent = oLastModif;
+
+function toggleMenu() {
+  document.getElementById("primaryNav").classList.toggle("hide");
+}

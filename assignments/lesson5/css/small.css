@@ -170,8 +170,27 @@ section.headings1 {
   text-align: left;
 }
 
+div#mapdiv {
+  display: none;
+}
+
+div#five_day {
+  display: none;
+}
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+div.contentbox {
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+img#ice_shack {
+  padding: 10px;
+  background-color: white;
+  width: 100%;
 }
