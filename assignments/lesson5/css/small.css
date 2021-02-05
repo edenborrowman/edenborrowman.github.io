@@ -171,7 +171,8 @@ section.headings1 {
 }
 
 div#mapdiv {
-  display: none;
+  color: #2a3640;
+  text-align: center;
 }
 
 div#five_day {
@@ -193,4 +194,12 @@ img#ice_shack {
   padding: 10px;
   background-color: white;
   width: 100%;
+}
+.smicon {
+  width: 30px;
+  padding: 5px;
+}
+
+iframe {
+  display: none;
 }

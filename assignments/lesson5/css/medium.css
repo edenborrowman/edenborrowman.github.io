@@ -27,11 +27,6 @@
     padding: 1rem;
   }
 
-  div#mapdiv {
-    display: block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-  }
-
   .weather_icon {
     width: 100px;
   }
@@ -76,5 +71,22 @@
     float: right;
     padding: 0px 0px 20px 20px;
     width: 375px;
+  }
+
+  iframe {
+    display: block;
+  }
+
+  div#mapdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    text-align: left;
+  }
+
+  .smicon {
+    width: 60px;
+    padding: 5px;
   }
 }
