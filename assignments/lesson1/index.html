@@ -9,10 +9,12 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+    <!--Commenting out Google API to use Web Front Loader Library for font management instead
+      
+      <link
       href="https://fonts.googleapis.com/css2?family=Allura&family=Questrial&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link href="css/small.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
     <title>Eden's Assignment Portal</title>
@@ -97,6 +99,11 @@
         let oLastModif = new Date(document.lastModified);
         document.getElementById("lastModified").textContent = oLastModif;
       </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script> WebFont.load({
+        google: {
+          families: ['Allura', 'Questrial']}});
+    </script>
     </footer>
   </body>
 </html>
