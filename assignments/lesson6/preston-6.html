@@ -23,10 +23,12 @@
         Saturday = Preston Pancakes in the Park!<br />
         9:00 a.m. Saturday at the city park pavilion.
       </aside>
+      
+    <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->  
       <picture>
         <img
           id="headerimg_small"
-          src="images/pennridge_outdoor_logo_round_white.png"
+          src="images/logo.svg"
           alt="The Pennridge Outdoor logo, a weathervane"
       /></picture>
       <section class="headings1">
@@ -42,7 +44,7 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
           <li><a href="#">Home</a></li>
-          <li class="active"><a href="preston-4.html">Preston</a></li>
+          <li class="active"><a href="preston-6.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
           <li><a href="#">Storm Center</a></li>
@@ -54,11 +56,18 @@
     <main>
       <h2 class="city">Preston, Idaho</h2>
       <div class="herodiv">
-        <img
+
+      <!--------------- My Hero image is hidden for week 6, but will return in week 7. -------------------->
+        <!-- <img
           class="heroimg"
           src="images/prestonspring.jpg"
           alt="scenic Idaho"
-        />
+        /> -->
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/wdd230_image_franklinOriginal_400px.jpg">
+          <source media="(max-width: 800px)" srcset="images/wdd230_image_franklinOriginal_800px.jpg">
+          <source media="(max-width: 1200px)" srcset="images/wdd230_image_franklinOriginal_1200px.jpg">
+          <img class="heroimg" src="images/wdd230_image_franklinOriginal_2000px.jpg" alt="sunny Idaho field">
         <section class="weathersummary">
           <span id="weather_summary">Weather Summary</span>
           <span id="current"> Current Condition:</span>

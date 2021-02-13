@@ -29,6 +29,10 @@ header h2 {
   margin: 0;
   font-weight: normal;
 }
+header figure.logo {
+  float: left; /*------------------------This lets the logo text float up next to the logo.*/
+  margin: 00 2% 0 0; /*------------------------removes default margin for better alignment with paragraph below.  Good design. */
+}
 
 /*----------- NAVIGATION --------------*/
 nav {

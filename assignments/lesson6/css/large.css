@@ -61,11 +61,11 @@
     width: 64rem;
   }
 
-  #headerimg_small {
+   #headerimg_small {
     position: relative;
     padding-right: 2em;
     width: 300px;
-    margin-top: 5rem;
+    margin-top: 11rem;
     margin-right: 2rem;
   }
   #pancakes.announcement {
