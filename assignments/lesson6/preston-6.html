@@ -7,7 +7,7 @@
     <meta
       name="A community-friendly page with weather, news, and information for the Preston, Idaho community."
     />
-    <link rel="shortcut icon" href="images/favicon 2 web optomized.ico" />
+    <link rel="shortcut icon" href="images/favicon_2_web_optomized.ico" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -23,8 +23,8 @@
         Saturday = Preston Pancakes in the Park!<br />
         9:00 a.m. Saturday at the city park pavilion.
       </aside>
-      
-    <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->  
+
+      <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->
       <picture>
         <img
           id="headerimg_small"
@@ -56,20 +56,33 @@
     <main>
       <h2 class="city">Preston, Idaho</h2>
       <div class="herodiv">
-
-      <!--------------- My Hero image is hidden for week 6, but will return in week 7. -------------------->
+        <!--------------- My Hero image is hidden for week 6, but will return in week 7. -------------------->
         <!-- <img
           class="heroimg"
           src="images/prestonspring.jpg"
           alt="scenic Idaho"
         /> -->
         <picture>
-          <source media="(max-width: 400px)" srcset="images/wdd230_image_franklinOriginal_400px.jpg">
-          <source media="(max-width: 800px)" srcset="images/wdd230_image_franklinOriginal_800px.jpg">
-          <source media="(max-width: 1200px)" srcset="images/wdd230_image_franklinOriginal_1200px.jpg">
-          <img class="heroimg" src="images/wdd230_image_franklinOriginal_2000px.jpg" alt="sunny Idaho field">
+          <source
+            media="(max-width: 400px)"
+            srcset="images/wdd230_image_franklinOriginal_400px.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/wdd230_image_franklinOriginal_800px.jpg"
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset="images/wdd230_image_franklinOriginal_1200px.jpg"
+          />
+          <img
+            class="heroimg"
+            src="images/wdd230_image_franklinOriginal_2000px.jpg"
+            alt="sunny Idaho field"
+          />
+        </picture>
         <section class="weathersummary">
-          <span id="weather_summary">Weather Summary</span>
+          <h3 id="weather_summary">Weather Summary</h3>
           <span id="current"> Current Condition:</span>
           <span id="condition">Rainy</span>
           <span id="high">Temperature:</span>
