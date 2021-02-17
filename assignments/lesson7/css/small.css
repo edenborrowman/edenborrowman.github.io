@@ -1,0 +1,21 @@
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  align-items: center;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
+/* article img[data-src] {
+  filter: blur(0.2em);
+}*/
+
+article img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
