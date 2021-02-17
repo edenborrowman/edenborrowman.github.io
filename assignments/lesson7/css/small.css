@@ -11,9 +11,9 @@ h1 {
   font-family: sans-serif;
 }
 
-/* article img[data-src] {
+article img[data-src] {
   filter: blur(0.2em);
-}*/
+}
 
 article img {
   filter: blur(0em);
