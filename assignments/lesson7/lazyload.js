@@ -1,4 +1,7 @@
+// // gind all the images with the data-src atribute
+
 // let imagesToLoad = document.querySelectorAll("img[data-src]");
+//
 // const loadImages = (image) => {
 //   image.setAttribute("src", image.getAttribute("data-src"));
 //   image.onload = () => {
@@ -6,9 +9,13 @@
 //   };
 // };
 
+// //loop through each image to load it
+
 // imagesToLoad.forEach((img) => {
 //   loadImages(img);
 // });
+
+// //load images as you scroll, on demand
 
 // if ("IntersectionObserver" in window) {
 //   const observer = new IntersectionObserver((items, observer) => {
