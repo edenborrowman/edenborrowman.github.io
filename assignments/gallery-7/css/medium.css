@@ -75,6 +75,7 @@
 
   iframe {
     display: block;
+    width: 100%;
   }
 
   div#mapdiv {
@@ -83,6 +84,8 @@
     grid-gap: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     text-align: left;
+    align-items: center;
+    justify-items: center;
   }
 
   .smicon {

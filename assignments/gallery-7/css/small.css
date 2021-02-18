@@ -184,6 +184,9 @@ section.headings1 {
 div#mapdiv {
   color: #2a3640;
   text-align: center;
+  margin: 3rem 0 0 0;
+  align-items: center;
+  justify-items: center;
 }
 
 div#five_day {
