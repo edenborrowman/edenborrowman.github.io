@@ -227,7 +227,7 @@ div#weather_pics {
 
 img.weather_gallery {
   width: 100%;
-  padding: 2px;
+  padding: px;
   align-items: center;
   justify-items: center;
 }
@@ -242,5 +242,6 @@ figcaption {
   color: white;
 }
 
-img.weather_gallery:hover {
+figure.gallery {
+  margin: 5%;
 }
