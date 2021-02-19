@@ -245,3 +245,12 @@ figcaption {
 figure.gallery {
   margin: 5%;
 }
+
+figure.gallery img[data-src] {
+  filter: blur(0.2em);
+}
+
+figure.gallery img {
+  filter: blur(0em);
+  transition: filter 1.5s;
+}
