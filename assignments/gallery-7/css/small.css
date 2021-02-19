@@ -221,13 +221,26 @@ iframe {
 
 div#weather_pics {
   display: grid;
-  background-color: red;
-  grid-template_columns: 1fr;
+  background-color: #99b4bf;
+  grid-template-columns: 1fr;
 }
 
 img.weather_gallery {
-  width: 400px;
+  width: 100%;
   padding: 2px;
   align-items: center;
   justify-items: center;
+}
+
+h2.gal_hl {
+  font-size: 1rem;
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+}
+
+img.weather_gallery:hover {
 }

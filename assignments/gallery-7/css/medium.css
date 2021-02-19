@@ -81,20 +81,35 @@
   div#mapdiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     text-align: left;
     align-items: center;
     justify-items: center;
+    width: 35rem;
   }
 
   .smicon {
-    width: 60px;
+    width: 45px;
     padding: 5px;
   }
   div#weather_pics {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    background-color: teal;
+    grid-template-columns: 400px 400px;
+    grid-gap: 5px;
+    justify-content: center;
+    justify items: center:
   }
-}
+
+  div#weather_pics {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;    
+    width: 35rem;
+    }
+
+   
+
+  h2.gal_hl {
+    font-size: 1.5rem;    
+  }
+
+ }

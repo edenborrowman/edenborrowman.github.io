@@ -1,9 +1,9 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
   nav {
-    width: 64rem;
+    width: 80rem;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   nav button {
     display: none;
@@ -58,7 +58,7 @@
 
   nav {
     grid-column: 1/6;
-    width: 64rem;
+    width: 80rem;
   }
 
    #headerimg_small {
@@ -76,12 +76,30 @@
   }
 
   main {
-    max-width: 64rem;
+    max-width: 80rem;
     align-items: center;
+  }
+
+  div#mapdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .smicon {
+    width: 60px;
   }
 
   div#weather_pics {
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: yellow;
-  }
-}
+    width: 80rem;
+    }
+    h2.gal_hl {
+      font-size: 2rem;
+    }
+   }
