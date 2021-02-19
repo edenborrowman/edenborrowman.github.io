@@ -79,14 +79,17 @@
     max-width: 80rem;
     align-items: center;
   }
+
+
   .smicon {
     width: 60px;
   }
 
   div#weather_pics {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80rem;
-    }
+    width: 1fr;
+  }
+
     h2.gal_hl {
       font-size: 2rem;
     }
