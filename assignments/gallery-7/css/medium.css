@@ -95,11 +95,10 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 2px;
     justify-content: center;
-    justify-items: center:
+    justify-items: center;
   }
 
   h2.gal_hl {
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
   }
-
- }
+}

@@ -33,10 +33,8 @@
   .headings1 {
     display: grid;
     grid-column: 2/6;
-    grid-row 3;
     font-size: 2.5rem;
     padding-top: 10px;
-    
   }
   section.headings1 {
     text-align: left;
@@ -48,9 +46,9 @@
     display: grid;
     grid-column: 2/6;
     text-align: left;
- }
+  }
   h2.headertitle {
-    font-size: 1.350rem;
+    font-size: 1.35rem;
   }
   div.headings2 {
     margin-top: 30px;
@@ -61,7 +59,7 @@
     width: 80rem;
   }
 
-   #headerimg_small {
+  #headerimg_small {
     position: relative;
     padding-right: 2em;
     width: 300px;
@@ -71,7 +69,7 @@
   #pancakes.announcement {
     position: absolute;
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
     margin-bottom: 5rem;
   }
 
@@ -79,7 +77,6 @@
     max-width: 80rem;
     align-items: center;
   }
-
 
   .smicon {
     width: 60px;
@@ -90,11 +87,11 @@
     width: 1fr;
   }
 
-    h2.gal_hl {
-      font-size: 2rem;
-    }
+  h2.gal_hl {
+    font-size: 2rem;
+  }
 
-    .weather_gallery:hover {
-      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
-    }
-   }
+  .weather_gallery:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
+  }
+}
