@@ -82,7 +82,7 @@
     text-align: left;
     align-items: center;
     justify-items: center;
-    width: 35rem;
+    width: 1fr;
   }
 
   .smicon {
