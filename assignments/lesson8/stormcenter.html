@@ -47,7 +47,8 @@
                 </li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li class="active"><a href="edenborrowman.github.io/assignments/lesson8/stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="edenborrowman.github.io/assignments/lesson8/stormcenter.html">Storm
+                        Center</a></li>
                 <li><a href="https://edenborrowman.github.io/assignments/gallery-7/gallery-7.html">Gallery</a>
                 </li>
             </ul>
@@ -55,81 +56,70 @@
     </header>
 
     <main>
-     
-<div class="farmdiv">
-     <picture>  
-        <source
-        media="(max-width: 400px)"
-        srcset="img/gallery_opt_imgs/farmhouse400.jpg"
-      />
-      <source
-        media="(max-width: 800px)"
-        srcset="img/gallery_opt_imgs/farmhouse800.jpg"
-      />
-      <source
-        media="(max-width: 1200px)"
-        srcset="img/gallery_opt_imgs/farmhouse1200.jpg"
-      />
-      <img
-        class="farmhouse"
-        loading="lazy"
-        srcset="img/gallery_opt_imgs/farmhouse1200.jpg"
-        alt="sunny Idaho field with old barn and outbuildings"
-      /> 
-    </picture>
-</div>
 
-    <h1 class="h1sc">Storm Center</h1>
+        <div class="farmdiv">
+            <picture>
+                <source media="(max-width: 400px)" srcset="img/gallery_opt_imgs/farmhouse400.jpg" />
+                <source media="(max-width: 800px)" srcset="img/gallery_opt_imgs/farmhouse800.jpg" />
+                <source media="(max-width: 1200px)" srcset="img/gallery_opt_imgs/farmhouse1200.jpg" />
+                <img class="farmhouse" loading="lazy" src="img/gallery_opt_imgs/farmhouse1200.jpg"
+                    alt="sunny Idaho field with old barn and outbuildings" />
+            </picture>
+        </div>
 
-     <h3>Welcome to the pennridgeoutdoor.com storm center reporting page. This is the place to report any weather events you observe to help keep your community safe and informed. Please leave detailed information so your information can be shared with the Pennridge Outdoor family. </h3>
+        <h1 class="h1sc">Storm Center</h1>
+
+        <h3>Welcome to the pennridgeoutdoor.com storm center reporting page. This is the place to report any weather
+            events you observe to help keep your community safe and informed. Please leave detailed information so your
+            information can be shared with the Pennridge Outdoor family. </h3>
         <!--------------------------- Storm Center Form ----------------------->
         <div class="formdiv">
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend class="legendtitle">Reporter's Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*:<input type="text" name="lname" required /> </label>
-                <label class="top">Phone*<input type="tel" name="phone" placeholder="5555555555" required />
-                </label>
-                <label class="top">
-                    Zip Code*<input type="number" name="email" placeholder="someone@gmail.com" required />
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend class="legendtitle">Storm Data</legend>
-                <label class="top">Storm Date<input type="date" name="date"></label>
-                <label class="top">Storm Type</label>
-                <select name="subject" class="formbut">
-                    <option selected disabled>Please Select</option>
-                    <option value="flood">Flash Flood</option>
-                    <option value="hail">Hail</option>
-                    <option value="hurricane">Hurricane</option>
-                    <option value="thunderstorm">Thunderstorm</option>
-                    <option value="tornado">Tornado</option>
-                </select>
-                <label class="top" >Storm Area</label>
-                <select name="select region" class="formbut">
-                    <option selected disabled>Please Select</option>
-                    <option value="preston">Preston</option>
-                    <option value="soda_springs">Soda Springs</option>
-                    <option value="fist_haven">Fish Haven</option>
-                </select>
-
-
-            </fieldset>
-            <fieldset>
-                <legend class="legendtitle">Storm Severity</legend>
-                <label class="top">User in Danger</label>
-                <!-- name left the same on all radio buttons. This means when one is selected, the other gets deselected. Otherwise you could click them all. -->
-                <label class="sbs"><input type="radio" name="danger" value="yes" />Yes</label>
-                <label class="sbs"><input type="radio" name="danger" value="no" />No</label>
-                <label class="sbs"><input type="radio" name="danger" value="maybe" />Maybe</label>
-                
-                <div id="rate"><label for="rating"  class="top" >Storm Intensity (on a scale of 1-10)</label></div>
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
-                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend class="legendtitle">Reporter's Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*:<input type="text" name="lname" required /> </label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="5555555555" required />
                     </label>
+                    <label class="top">
+                        Zip Code*<input type="number" name="email" placeholder="someone@gmail.com" required />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="legendtitle">Storm Data</legend>
+                    <label class="top">Storm Date<input type="date" name="date"></label>
+                    <label class="top">Storm Type</label>
+                    <select name="subject" class="formbut">
+                        <option selected disabled>Please Select</option>
+                        <option value="flood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </select>
+                    <label class="top">Storm Area</label>
+                    <select name="select region" class="formbut">
+                        <option selected disabled>Please Select</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda_springs">Soda Springs</option>
+                        <option value="fist_haven">Fish Haven</option>
+                    </select>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend class="legendtitle">Storm Severity</legend>
+                    <label class="top">User in Danger</label>
+                    <!-- name left the same on all radio buttons. This means when one is selected, the other gets deselected. Otherwise you could click them all. -->
+                    <label class="sbs"><input type="radio" name="danger" value="yes" />Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no" />No</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe" />Maybe</label>
+
+                    <div id="rate"><label for="rating" class="top">Storm Intensity (on a scale of 1-10)</label></div>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+
                     <datalist id="tickmarks">
                         <option value="0">
                         <option value="1">
@@ -142,15 +132,16 @@
                         <option value="8">
                         <option value="9">
                         <option value="10">
-                    </datalist>                
-            </fieldset>
-            <fieldset id="comments">
-                <legend class="legendtitle">Additional Comments</legend>
-                <label><input type="textarea" class="txtarea"></label>
-            </fieldset>
-            <input type="submit" value="Report Weather Event" class="submitBtn">
-        </form>
-    
+                    </datalist>
+                </fieldset>
+                <fieldset id="comments">
+                    <legend class="legendtitle">Additional Comments</legend>
+                    <label><input type="text" class="txtarea"></label>
+                </fieldset>
+                <input type="submit" value="Report Weather Event" class="submitBtn">
+            </form>
+        </div>
+
 
 
         <div id="mapdiv">
