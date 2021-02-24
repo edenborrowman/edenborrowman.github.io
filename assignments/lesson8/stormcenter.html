@@ -55,9 +55,33 @@
     </header>
 
     <main>
-     <h1 class="h1sc">Storm Center</h1>
+     
+<div class="farmdiv">
+     <picture>  
+        <source
+        media="(max-width: 400px)"
+        srcset="img/gallery_opt_imgs/farmhouse400.jpg"
+      />
+      <source
+        media="(max-width: 800px)"
+        srcset="img/gallery_opt_imgs/farmhouse800.jpg"
+      />
+      <source
+        media="(max-width: 1200px)"
+        srcset="img/gallery_opt_imgs/farmhouse1200.jpg"
+      />
+      <img
+        class="farmhouse"
+        loading="lazy"
+        srcset="img/gallery_opt_imgs/farmhouse1200.jpg"
+        alt="sunny Idaho field with old barn and outbuildings"
+      /> 
+    </picture>
+</div>
 
-     <p>Welcome to the pennridgeoutdoor.com storm center reporting page. This is the place to report any weather events you observe to help keep your community safe and informed. Please leave detailed information so your information can be shared with the Pennridge Outdoor family. </p>
+    <h1 class="h1sc">Storm Center</h1>
+
+     <h3>Welcome to the pennridgeoutdoor.com storm center reporting page. This is the place to report any weather events you observe to help keep your community safe and informed. Please leave detailed information so your information can be shared with the Pennridge Outdoor family. </h3>
         <!--------------------------- Storm Center Form ----------------------->
         <div class="formdiv">
         <form method="get" action="thanks.html">

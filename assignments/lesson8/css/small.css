@@ -376,4 +376,11 @@ span#ratingvalue {
   padding: .2rem;
 }
 
+img.farmhouse{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 1, 1, 0.5);
+  }
 
