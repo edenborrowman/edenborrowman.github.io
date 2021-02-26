@@ -266,9 +266,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 h1.h1sc {
   font-size: 2.2rem;
 }
-form {
-  
-}
 
 form fieldset {
     margin: 2rem 0;
@@ -288,7 +285,7 @@ form label.top, form div {
     display: block;
     padding-top: 1rem;
     color:#2a3640;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Montserrat", "Helvetica", sans-serif;
 }
 
@@ -321,7 +318,8 @@ div#rate {
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #555;    
+    color: #555;
+     
 }
 form input.submitBtn {
     border: none;
@@ -359,9 +357,9 @@ fieldset#danger{
   margin-bottom: 5rem;
 }
 
-form select.stormbut {
-  padding: 5px;
-  color: red;
+form select.formbut {
+  padding: 10px;
+  border-radius: 4px;
 }
 
 div#rate{
@@ -370,10 +368,12 @@ div#rate{
 }
 
 span#ratingvalue {
-  
-  background-color:black;
-  color: white;
+  color: blue;
   padding: .2rem;
+}
+.flexly {
+	display: flex;
+	align-items: center;
 }
 
 img.farmhouse{

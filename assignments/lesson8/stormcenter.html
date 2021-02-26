@@ -115,11 +115,12 @@
                     <label class="sbs"><input type="radio" name="danger" value="no" />No</label>
                     <label class="sbs"><input type="radio" name="danger" value="maybe" />Maybe</label>
 
-                    <div id="rate"><label for="rating" class="top">Storm Intensity (on a scale of 1-10)</label></div>
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
-                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
-
+                    <div id="rate"><label for="rating">Storm Intensity (on a scale of 1-10)</label></div>
+                    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+            
                     <datalist id="tickmarks">
                         <option value="0">
                         <option value="1">
