@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <meta name="description" content="lazyLoad images ">
+
+    <link rel="google-fonts" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img class="logo" src="images/projLogo(2px).jpg" alt="PrestonToday">
+        </picture>
+        <section class="headings">
+            <h1>PrestonToday Weather Forecast</h1>
+            <div class=" motto">The Most Reliable Weather Forecast</div>
+        </section>
+    </header>
+    <!--NAVIGATION HEARE-->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; </button>
+        <ul id="primaryNav" class="hide">
+
+            <li class="active"><a href="#">Home</a></li>
+            <li> <a href="#"> Preston</a> </li>
+            <li> <a href="#"> Soda Springs</a> </li>
+            <li> <a href="#">Fish Haven</a></li>
+            <li> <a href="#">Storm Center</a> </li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2 id="Heading">Birds and Flowers Gallery</h2>
+        <div class="figContainer">
+            <figure id="Img1">
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/chi-liu-l-rtCtc_4c0-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img2">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/colin-mcmurry-moW1c5sUQZE-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img3">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/estefania-cortes-nodcVGuTdbs-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img4">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/jonas-jaeken-Rz7ftGj6YeU-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img5">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/lina-silivanova-QfHGrSCBEoc-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img6">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/markus-spiske-HaVQLzwyyfM-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img7">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/ray-hennessy-8YcUN7F_-6c-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img8">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/semen-borisov-0G0VYbpc39M-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+            <figure id="Img9">
+
+                <img class= "gallery_image" src="images/placeholder.jpeg" data-src="images/benjamin-wong-So_VMm4YqLY-unsplash.jpg"
+                    alt="flower image" />
+
+                <figcaption>flower</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+
+    <footer>
+
+        © 2021 | Vilma M. Gogue | Guam, USA | <a href="https://www.byui.edu/online">https://www.byui.edu/online</a>
+        <br>
+        <div class="subscript">Last Updated :
+            <span id="currentdate"></span>
+        </div>
+
+    </footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lazyLoad.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+
+        WebFont.load({
+            google: {
+                families: [
+                    'Fraunces', serif
+                ]
+            }
+        });
+
+    </script>
+
+
+
+
+</html>

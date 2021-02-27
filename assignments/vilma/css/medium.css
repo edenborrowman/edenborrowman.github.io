@@ -1,0 +1,47 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em)
+{
+nav button{
+    display: none;
+}
+nav ul {
+    margin-left: 2%;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding: .8rem 1rem;
+}
+nav ul.hide {
+    display: block;
+}
+
+table style{
+width:100%;
+}
+.weatherIcon {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .weatherIcon th {
+    background-color: #999;
+  }
+  .weatherIcon td{
+    width: 25%;
+    height: auto;
+  }
+
+  .figContainer {
+    margin: 1rem auto; 
+      display:grid; 
+      grid-template-columns: 1fr 1fr; 
+      max-width: 35em;
+    }
+ 
+}
+/**********end of medium**********************/

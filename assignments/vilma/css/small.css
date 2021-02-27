@@ -1,0 +1,157 @@
+/*Prevents adjustments of font size after orientation changes in IE on Windows Phone and in IOS. */
+html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+/*--------apply a natural box layout model to all elements------------*/
+*{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+body {
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    background-color:#0077B6;
+    padding: 0;
+	margin: 0;
+  }
+  header,
+  nav,
+  main,
+  footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  header {
+	background-color:white;
+	padding-top: 10px;
+	display: flex;
+	align-items:center;
+    justify-content:center;
+    color: rgb(92, 92, 13);
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 2.6rem;
+	margin: 0 0 0 17px;
+}
+header img {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+    padding-left: 2%;
+  }
+.motto {
+	font-style: italic;
+	letter-spacing: 1px;
+	color: navy;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
+  .headings1 {
+    font-size: 1.2rem;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 2.6rem;
+    text-shadow: 3px 3px 3px #777;
+}
+
+nav button {
+    margin: 0.2rem 2%;   
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+nav {
+    background-color: #ccc;
+    font-family: 'Fraunces', serif;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}  
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+color: orange;
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+nav ul.hide{
+    display: none;
+}
+/*--------Clearfix: Force an element not to collapse------*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    background-color:#03045E;
+    text-align:center;
+    color:#CAF0F8;
+    font-size: 1em;
+} 
+img[data-src] {
+    filter: blur(0.5rem);
+  }
+  
+  img {
+    filter: blur(0rem);
+    transition: filter 0.5s;
+  } 
+
+main{
+    
+    text-align: center;
+}
+
+main h2{
+    font-size: 3rem;
+
+}
+
+
+figure:nth-child(n){
+    margin: 15px;
+}
+
+figure:hover:nth-child(n){
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transform: scale(1.05);
+}
+
+
+figcaption{
+    font-size: .8em;
+}
+
+  .figContainer {
+    margin: 1rem auto; 
+      display:grid; 
+      grid-template-columns: 1fr; 
+      max-width: 400px;
+    }
+
+ 
+  figcaption {font-size: smaller;}
+  /* hover effect */
+  .norm:hover {box-shadow: 0 0 50px #333;
+}
+
+.gallery_image {
+    max-width: 95%;
+}

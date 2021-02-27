@@ -1,0 +1,87 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+        nav {
+            width: 100%;
+            align-items: center;
+            font-size: 0.8rem;
+          }
+          nav {
+            grid-column: 1/6;
+            width: 100%;
+          }
+          nav button {
+            display: none;
+            padding: 2em;
+          }
+        
+          nav ul.hide {
+            display: flex;
+          }
+          nav ul li {
+            flex: 1 1 100%;
+          }
+          nav ul li a {
+            border: none;
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+            
+            text-align: center;
+          }
+        
+          header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 10px 10px;
+            grid-gap: 3em;
+          }
+         
+        
+       
+          header {
+            background-color:white;
+            padding-top: 10px;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            color: rgb(92, 92, 13);
+        }
+        
+        #headings {
+            display: flex;
+            flex-direction: column;
+          }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            
+            padding-right: 5%;
+            padding-left: 2%;
+          }
+        div.motto {
+            font-style: italic;
+            letter-spacing: 1px;
+            color: navy;
+            margin-left: 20px;
+            font-size: 1.5rem;
+        }
+        
+          .headings {
+            font-size: 1.2rem;
+          }
+        main.img{
+    width: 100%;
+        }
+
+        .figContainer {
+            margin: 1rem auto; 
+              display:grid; 
+              grid-template-columns: 1fr 1fr 1fr; 
+              max-width: 1200;
+            }
+  
+        }
+        /**************end of large*************/
