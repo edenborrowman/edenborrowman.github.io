@@ -10,16 +10,16 @@ body {
 
     h1 {
     color:#2a3640;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     }
     h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     margin-top: 10px;
     }
 
     p {
-    font-size: .8rem;
+    font-size: .7rem;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     }
        
@@ -47,21 +47,61 @@ body {
         
     }
 footer {
-    margin-top: 2rem;
-    color:#2a3640;
+    font-size: .75rem;
+    margin-top: 2rem;   
+    padding: 4rem;
+    color:white;
+    background-color:#99b4bf;
 }
 
 @media only screen and (min-width: 35rem) {
+
+h1 {
+    font-size: 2.0rem;
+        }
+h2 {
+    font-size: 1.2rem;
+        }
+    
+p {
+    font-size: .8rem;
+        }
+div.cards {
+    min-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;    
     grid-gap: 1.5rem;
     }
+
+    footer {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width: 64rem) {
+    h1 {
+        font-size: 2.8rem;
+        }
+    h2 {
+        font-size: 1.5rem;
+        }
+    
+    p {
+        font-size: 1rem;
+        }
+    div.cards {
+        min-width: 64rem;
+        max-width: 80%;
+    }
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    footer {
+        font-size: 1.2rem;
     }
 }
