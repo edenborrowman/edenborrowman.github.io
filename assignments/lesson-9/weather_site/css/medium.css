@@ -108,5 +108,26 @@ img.farmhouse{
   
   }
 
+/* -----------------index style-------------- */
+
+picture.p_rt {
+  float: right;
+}
+picture.p_left {
+  float: left;
+}
+section.town_index_preston {
+  margin-bottom: 1rem;
+}
+section.town_index_soda {
+  margin-bottom: 1rem;
+}
+
+section.town_index_fish {
+  margin-bottom: 1rem;
+}
+h1.index_h1 {
+  text-align: center;
+}
       
   } /* end of media query */

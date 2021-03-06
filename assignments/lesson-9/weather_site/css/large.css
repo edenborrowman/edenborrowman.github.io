@@ -94,16 +94,19 @@
   .weather_gallery:hover {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
   }
-}
-
-
 form label.sbs {
   padding: .4rem 0;}
 
   img.farmhouse{
     margin-top: 2rem;
-    }
+  }
 
+ /* -----------------index style-------------- */
 
-  
-} /* end of media query */
+div.town_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .5rem;
+  }
+ 
+} /* end of media query

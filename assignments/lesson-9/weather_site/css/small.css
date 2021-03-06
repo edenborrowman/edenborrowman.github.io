@@ -349,10 +349,6 @@ input.txtarea {
     color: #555;
 }
 
-/* legend#danger {
-  color: red;
-} */
-
 fieldset#danger{
   margin-bottom: 5rem;
 }
@@ -388,3 +384,25 @@ img.farmhouse{
     font-size: 3rem;
   }
 
+  /* -------------Index styling------------ */
+
+  div.town_div {
+    display: block;
+    margin: auto;
+    padding: 2%;
+}
+
+img.index_img {
+  width: 96%;
+  max-width: 400px;
+  padding: 2%;
+ }
+
+#index_article {
+  background-color:rgba(153, 180, 191, 0.6);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
+  margin-top: 2rem;
+  padding: 1% 2% 3% 2%;
+}
+}
+  
