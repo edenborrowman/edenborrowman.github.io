@@ -30,29 +30,14 @@
     grid-gap: 3em;
   }
 
-  .headings1 {
-    display: grid;
-    grid-column: 2/6;
-    font-size: 2.5rem;
-    padding-top: 10px;
-  }
   section.headings1 {
     text-align: left;
-    font-size: 2.5rem;
-    margin-bottom: 0;
-    margin-top: 8rem;
-  }
-  .headings2 {
-    display: grid;
-    grid-column: 2/6;
-    text-align: left;
-  }
+    font-size: 2.5rem;}
+
   h2.headertitle {
     font-size: 1.35rem;
   }
-  div.headings2 {
-    margin-top: 30px;
-  }
+
 
   nav {
     grid-column: 1/6;
@@ -60,11 +45,10 @@
   }
 
   #headerimg_small {
-    position: relative;
     padding-right: 2em;
     width: 300px;
-    margin-top: 11rem;
-    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-left: 10%;
   }
   #pancakes.announcement {
     position: absolute;
