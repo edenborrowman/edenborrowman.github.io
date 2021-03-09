@@ -56,12 +56,6 @@
     <main>
       <h2 class="city">Preston, Idaho</h2>
       <div class="herodiv">
-        <!--------------- My Hero image is hidden for week 6, but will return in week 7. -------------------->
-        <!-- <img
-          class="heroimg"
-          src="images/prestonspring.jpg"
-          alt="scenic Idaho"
-        /> -->
         <picture>
           <source
             media="(max-width: 400px)"
@@ -84,13 +78,13 @@
         <section class="weathersummary">
           <h3 id="weather_summary">Weather Summary</h3>
           <span id="current"> Current Condition:</span>
-          <span id="condition">Rainy</span>
+          <span id="cond"></span>
           <span id="high">Temperature:</span>
-          <span> <span id="temp">54</span>&deg; F </span>
+          <span> <span id="temp"></span>&deg; F </span>
           <span id="humidity">Humidity:</span>
-          <span id="humid_pct">95%</span>
+          <span id="humid_pct"></span>
           <span id="wind">Wind Speed:</span>
-          <span> <span id="speed">12</span> mph </span>
+          <span> <span id="speed"></span> mph </span>
           <span id="windchill">Wind Chill:</span>
           <span id="windchill_num"></span>
         </section>
@@ -273,11 +267,12 @@
       </p>
       <span id="currentdate"></span><br /><br />
     </footer>
+    <script src="js/weatherapi.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/announcement.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/windchill.js"></script>
-    <script>
+    
       WebFont.load({
         google: {
           families: ["Libre Baskerville", "Montserrat"],

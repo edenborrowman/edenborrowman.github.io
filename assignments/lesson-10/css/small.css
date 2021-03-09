@@ -123,6 +123,9 @@ div.herodiv {
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   grid-column-gap: 1.5rem;
+  grid-row-gap: .5rem;
+  text-align: left;
+  
 }
 
 h3#weather_summary {
