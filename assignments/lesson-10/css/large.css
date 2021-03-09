@@ -1,0 +1,107 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  nav {
+    width: 80rem;
+    align-items: center;
+    font-size: 1rem;
+  }
+  nav button {
+    display: none;
+    padding: 2em;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 1rem;
+    text-align: center;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 10px 10px;
+    grid-gap: 3em;
+  }
+
+  section.headings1 {
+    text-align: left;
+    font-size: 2.5rem;}
+
+  h2.headertitle {
+    font-size: 1.35rem;
+  }
+
+
+  nav {
+    grid-column: 1/6;
+    width: 80rem;
+  }
+
+  #headerimg_small {
+    padding-right: 2em;
+    width: 300px;
+    margin-top: 2rem;
+    margin-left: 10%;
+  }
+  #pancakes.announcement {
+    position: absolute;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+  }
+
+  main {
+    max-width: 80rem;
+    align-items: center;
+  }
+
+  .smicon {
+    width: 60px;
+  }
+
+  div#weather_pics {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1fr;
+  }
+
+  h2.gal_hl {
+    font-size: 2rem;
+  }
+
+  .weather_gallery:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
+  }
+form label.sbs {
+  padding: .4rem 0;}
+
+  img.farmhouse{
+    margin-top: 2rem;
+  }
+
+ /* -----------------index style-------------- */
+
+div.town_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  padding-bottom: 0;
+  }
+
+section.home_sect {
+  display: block;
+}
+
+article#index_article {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+ 
+} /* end of media query
