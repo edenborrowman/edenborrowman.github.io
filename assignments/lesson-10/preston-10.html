@@ -95,43 +95,41 @@
             <h3 class="five_day_title">Five Day Forecast</h3>
           </caption>
           <tr class="color_table">
-            <td><p>MON</p></td>
-            <td><p>TUE</p></td>
-            <td><p>WED</p></td>
-            <td><p>TH</p></td>
-            <td><p>FRI</p></td>
+            <td id="d1"><p></p></td>
+            <td id="d2"><p></p></td>
+            <td id="d3"><p></p></td>
+            <td id="d4"><p></p></td>
+            <td id="d5"><p></p></td>
           </tr>
           <tr>
             <td>
-              <img
-                class="weather_icon"
-                src="images/mixed_sun_rain.png"
-                alt="mixed sun and rain"
-              />
+                <img id="imagesrc1"></img> &nbsp;
+                <img src="" alt="" id="icon1" />
+             
             </td>
             <td>
-              <img class="weather_icon" src="images/snow.png" alt="snow" />
+                <img id="imagesrc2"></img> &nbsp;
+                <img src="" alt="" id="icon2" />
             </td>
             <td>
-              <img class="weather_icon" src="images/snow.png" alt="snow" />
+                <img id="imagesrc3"></img> &nbsp;
+                <img src="" alt="" id="icon3" />
             </td>
             <td>
-              <img class="weather_icon" src="images/sunny.png" alt="sunny" />
+                <img id="imagesrc4"></img> &nbsp;
+                <img src="" alt="" id="icon4" />
             </td>
             <td>
-              <img
-                class="weather_icon"
-                src="images/partly_sunny.png"
-                alt="partly sunny"
-              />
+              <img id="imagesrc5"></img> &nbsp;
+                <img src="" alt="" id="icon5" />
             </td>
           </tr>
           <tr class="color_table">
-            <td><p>42&deg;</p></td>
-            <td><p>27&deg;</p></td>
-            <td><p>22&deg;</p></td>
-            <td><p>39&deg;</p></td>
-            <td><p>44&deg;</p></td>
+            <td id='t1'><p> ;</p></td>
+            <td id='t2'><p> &deg;</p></td>
+            <td id='t3'><p> &deg;</p&deg;</p></td>
+            <td id='t4'><p> &deg;</p></td>
+            <td id='t5'><p> &deg;</p></td>
           </tr>
         </table>
       </div>
@@ -271,7 +269,8 @@
     <script src="js/currentdate.js"></script>
     <script src="js/announcement.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/windchill.js"></script>
+    
+    
     
       WebFont.load({
         google: {

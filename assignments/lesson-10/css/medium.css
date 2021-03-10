@@ -35,6 +35,7 @@
   tbody {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
   }
+  
   table#forecast_table {
     width: 85%;
     padding-bottom: 45px;
@@ -49,7 +50,14 @@
   .color_table {
     background-color: #2a3640;
   }
+ 
+td#d1 {
+  padding: 1rem;
+}
 
+td#t1{
+  padding: 1rem;
+}
   table.center {
     margin-left: auto;
     margin-right: auto;
