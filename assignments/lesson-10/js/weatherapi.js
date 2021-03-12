@@ -53,10 +53,11 @@ fetch(apiforecastURL)
  const thefive = jsObject.list.filter((element) => element.dt_txt.includes('18:00:00'));
  
 
- // Use a for loop to loop through the data and fill the table
+ // Use a "for" loop to loop through the data and fill the table
  
  let day = 0;
  let i= 0;
+ console.log(thefive);
  
  for (i=0; i<thefive.length; i++) {
       
@@ -65,9 +66,9 @@ fetch(apiforecastURL)
   //write day name using array built earlier
   document.getElementById('dayofweek' + (day+1)).textContent = dayName[d.getDay()];  
   // write temperature data. Use Math.round to make it a whole number.
-  document.getElementById('forecast' + (day+1)).textContent = Math.round(jsObject.list[i].main.temp);
+  document.getElementById('forecast' + (day+1)).textContent = Math.round(thefive[day].main.temp);
   // give the browser the icon address
-  var imagesrc = 'https://openweathermap.org/img/w/' + thefive[0].weather[0].icon + '.png';
+  var imagesrc = 'https://openweathermap.org/img/w/' + thefive[day].weather[0].icon + '.png';
   // populate table with icons, set alt attribute using weather description from the object
   document.getElementById('imagesrc' + (day+1)).textContent = imagesrc;
   document.getElementById('icon' + (day+1)).setAttribute('src', imagesrc);
