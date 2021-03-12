@@ -125,6 +125,7 @@ div.herodiv {
   grid-column-gap: 1.5rem;
   grid-row-gap: .5rem;
   text-align: left;
+  padding: 15px;
   
 }
 

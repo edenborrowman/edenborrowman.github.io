@@ -51,11 +51,11 @@
     background-color: #2a3640;
   }
  
-td#d1 {
+td#dayofweek1 {
   padding: 1rem;
 }
 
-td#t1{
+td#forecast1{
   padding: 1rem;
 }
   table.center {
@@ -67,14 +67,16 @@ td#t1{
     font-size: 1.5rem;
   }
 
-  .weather_icon {
+  #icon1, #icon2, #icon3, #icon4, #icon5 {
     padding: 15px;
+    width: 100px;
   }
 
   img#ice_shack {
     float: right;
-    padding: 0px 0px 20px 20px;
-    width: 375px;
+    padding: 0px 20px 20px 20px;
+    width: 450px;
+    margin-right: -5px;
   }
 
   iframe {
