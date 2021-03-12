@@ -84,9 +84,8 @@ fetch(apiforecastURL)
       // populate table with icons, set alt attribute using weather description from the object
       document.getElementById("imagesrc" + (day + 1)).textContent = imagesrc;
       document.getElementById("icon" + (day + 1)).setAttribute("src", imagesrc);
-      document
-        .getElementById("icon" + (day + 1))
-        .setAttribute("alt", thefive[0].weather[0].description);
+      document.getElementById("icon" + (day + 1))
+      document.setAttribute("alt", thefive[0].weather[0].description);
 
       day++;
     }
