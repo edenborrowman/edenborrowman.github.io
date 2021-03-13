@@ -71,7 +71,7 @@ fetch(apiforecastURL)
       document.getElementById("dayofweek" + (day + 1)).textContent = dayName[d.getDay()];
 
       // write temperature data. Use Math.round to make it a whole number.
-      document.getElementById("forecast" + (day + 1)).textContent = Math.round(thefive[day].main.temp);
+      document.getElementById("forecast" + (day + 1)).textContent = Math.round(thefive[day].main.temp) + ' °F'
 
       // give the browser the icon address
       var imagesrc = "https://openweathermap.org/img/w/" + thefive[day].weather[0].icon + ".png";
