@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Preston Weather Information</title>
+    <meta
+      name="A community-friendly page with weather, news, and information for the Preston, Idaho community."
+    />
+    <link rel="shortcut icon" href="images/favicon_2_web_optomized.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <header>
+      <aside onload="toggleAnnouncement()" id="pancakes" class="announcement">
+        Saturday = Preston Pancakes in the Park!<br />
+        9:00 a.m. Saturday at the city park pavilion.
+      </aside>
+
+      <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->
+      <picture>
+        <img
+          id="headerimg_small"
+          src="images/logo.svg"
+          alt="The Pennridge Outdoor logo, a weathervane"
+      /></picture>
+      <section class="headings1">
+        <h1 class="headertitle">Pennridge Outdoor</h1>
+        <br />
+      </section>
+      <div class="headings2">
+        <h2 class="headertitle">
+          A Community site for weather, news, and information
+        </h2>
+      </div>
+      <nav id="headernav">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="https://edenborrowman.github.io/assignments/lesson-9/home/index.html">Home</a></li>
+          <li class="active"><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="https://edenborrowman.github.io/assignments/lesson8/stormcenter.html">Storm Center</a></li>
+          <li><a href="https://edenborrowman.github.io/assignments/gallery-7/gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="city">Preston, Idaho</h2>
+      <div class="herodiv">
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="images/soda_springs_400.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset='images/prestonspring800.jpg'
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset='images/prestonspring1200.jpg'
+          />
+          <img
+            class="heroimg"
+            src="images/prestonspring.jpg"
+            alt="sunny Idaho field"
+          />
+        </picture>
+        <section class="weathersummary">
+          <h3 id="weather_summary">Weather Summary</h3>
+          <span id="current"> Current Condition:</span>
+          <span id="cond"></span>
+          <span id="high">Temperature:</span>
+          <span> <span id="temp"></span>&deg; F </span>
+          <span id="humidity">Humidity:</span>
+          <span id="humid_pct"></span>
+          <span id="wind">Wind Speed:</span>
+          <span> <span id="speed"></span> mph </span>
+          <span id="windchill">Wind Chill:</span>
+          <span id="windchill_num"></span>
+        </section>
+      </div>
+      <div id="five_day">
+        <table id="forecast_table" class="center">
+          <caption>
+            <h3 class="five_day_title">Five Day Forecast</h3>
+          </caption>
+          <tr class="color_table">
+            <td id="dayofweek1"><p></p></td>
+            <td id="dayofweek2"><p></p></td>
+            <td id="dayofweek3"><p></p></td>
+            <td id="dayofweek4"><p></p></td>
+            <td id="dayofweek5"><p></p></td>
+          </tr>
+          <tr>
+            <td>
+                <img id="imagesrc1"></img> &nbsp;
+                <img src="" alt="" id="icon1" />
+             
+            </td>
+            <td>
+                <img id="imagesrc2"></img> &nbsp;
+                <img src="" alt="" id="icon2" />
+            </td>
+            <td>
+                <img id="imagesrc3"></img> &nbsp;
+                <img src="" alt="" id="icon3" />
+            </td>
+            <td>
+                <img id="imagesrc4"></img> &nbsp;
+                <img src="" alt="" id="icon4" />
+            </td>
+            <td>
+              <img id="imagesrc5"></img> &nbsp;
+                <img src="" alt="" id="icon5" />
+            </td>
+          </tr>
+          <tr class="color_table">
+            <td id='forecast1'><p> &deg;</p></td>
+            <td id='forecast2'><p> &deg;</p></td>
+            <td id='forecast3'><p> &deg;</p&deg;</p></td>
+            <td id='forecast4'><p> &deg;</p></td>
+            <td id='forecast5'><p> &deg;</p></td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>Ice Fishing Extravaganza</h2>
+      <img
+        id="ice_shack"
+        src="images/preston_ice_fishing.jpg"
+        alt="an ice fishing shack on the local lake"
+      />
+
+      <div class="contentbox_1">
+        <p>
+          Eorem nede namworrob ipsum dolor sit, amet consectetur adipisicing elit. Deque cumque
+          similique ratione enim delectus veritatis beatae expedita mollitia
+          quibusdam nostrum. Eimilique, hic ratione. Nisi aut voluptate sint
+          nemo animi dolorem eveniet numquam eos porro reiciendis voluptatibus
+          natus consectetur amet, ullam molestiae commodi in veritatis
+          laboriosam aliquam eum tenetur dolores omnis fugit? Wnim veniam qui
+          vero voluptas ducimus officiis, maiores amet officia possimus omnis
+          saepe quas ut, distinctio provident, temporibus commodi nisi neque
+          voluptates. Rncidunt soluta quia omnis unde maxime vel culpa fuga.
+          Oistinctio sed adipisci magni. Tnim sunt aliquid inventore neque iusto
+          sint cumque recusandae dolore sed asperiores corrupti vel nesciunt
+          voluptatum eum in, quod odit sequi ratione vero. Eapiente, aut! Ta hic
+          nihil, cumque modi soluta molestiae corporis iusto tempore facere? Ht
+          reiciendis porro, eum quas praesentium vero veniam minima officiis
+          recusandae? Iuisquam vitae officia beatae repellat sequi velit
+          possimus sit facilis! Sepellat itaque, aspernatur dolores cupiditate
+          voluptate veniam facilis sunt voluptas fuga odit doloribus maxime,
+          assumenda quam perferendis aliquam beatae obcaecati mollitia. Ceatae,
+          magni provident veniam incidunt tempora quo! Occusamus, perspiciatis.
+          Dimilique dolore minima cupiditate asperiores. Essumenda ea magni
+          corporis eius doloremque, eos adipisci doloribus vitae laborum
+          molestias debitis aut nam tempore consectetur aliquid quos,
+          repellendus animi inventore. Et reiciendis porro, eum quas praesentium
+          vero veniam minima officiis recusandae? Quisquam vitae officia beatae
+          repellat sequi velit possimus sit facilis! Repellat itaque, aspernatur
+          dolores cupiditate voluptate veniam facilis sunt voluptas fuga odit
+          doloribus maxime, assumenda quam perferendis aliquam beatae obcaecati
+          mollitia. 
+        </p>
+      </div>
+
+      <div class="contentbox">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque
+          similique ratione enim delectus veritatis beatae expedita mollitia
+          quibusdam nostrum. Similique, hic ratione. Nisi aut voluptate sint
+          nemo animi dolorem eveniet numquam eos porro reiciendis voluptatibus
+          natus consectetur amet, ullam molestiae commodi in veritatis
+          laboriosam aliquam eum tenetur dolores omnis fugit? Enim veniam qui
+          vero voluptas ducimus officiis, maiores amet officia possimus omnis
+          saepe quas ut, distinctio provident, temporibus commodi nisi neque
+          voluptates. Incidunt soluta quia omnis unde maxime vel culpa fuga.
+          Distinctio sed adipisci magni. Enim sunt aliquid inventore neque iusto
+          sint cumque recusandae dolore sed asperiores corrupti vel nesciunt
+          voluptatum eum in, quod odit sequi ratione vero. Sapiente, aut! Ea hic
+          nihil, cumque modi soluta molestiae corporis iusto tempore facere? Et
+          reiciendis porro, eum quas praesentium vero veniam minima officiis
+          recusandae? Quisquam vitae officia beatae repellat sequi velit
+          possimus sit facilis! Repellat itaque, aspernatur dolores cupiditate
+          voluptate veniam facilis sunt voluptas fuga odit doloribus maxime,
+          assumenda quam perferendis aliquam beatae obcaecati mollitia. Beatae,
+          magni provident veniam incidunt tempora quo! Accusamus, perspiciatis.
+          Similique dolore minima cupiditate asperiores. Assumenda ea magni
+          corporis eius doloremque, eos adipisci doloribus vitae laborum
+          molestias debitis aut nam tempore consectetur aliquid quos,
+          repellendus animi inventore.
+        </p>
+      </div>
+
+      <div id="mapdiv">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d94731.53967909195!2d-111.880325!3d42.099747!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612414617377!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+
+        <section id="contact_info">
+          <h4>Contact Us!</h4>
+          <p>
+            Pennridge Outdoor<br />
+            55 Main St<br />
+            Perkasie, PA 18944<br /><br />
+            &#9742; &nbsp; 208 555-5555<br /><br />
+            &#9993; &nbsp; penn@pennridgeoutdoor.com<br />
+          </p>
+          <a
+            href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"
+            ><img class="smicon" src="images/Github.png" alt="git hub icon"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img class="smicon" src="images/Twitter.png" alt="twitter icon"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              class="smicon"
+              src="images/Instagram.png"
+              alt="instagram icon"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img class="smicon" src="images/Facebook.png" alt="facebook icon"
+          /></a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+        <a class="footlink" href="https://www.byui.edu/online"
+          >BYU-I Online Learning</a
+        >
+      </p>
+      <span id="currentdate"></span><br /><br />
+    </footer>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/announcement.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({
+        google: {
+          families: ["Libre Baskerville", "Montserrat"],
+        },
+      });
+    </script>
+  </body>
+</html>
