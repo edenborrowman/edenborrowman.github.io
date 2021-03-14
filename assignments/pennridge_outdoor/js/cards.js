@@ -25,13 +25,14 @@ for (let i=0; i < towns.length; i++) {
     
     // What each card will have, contatenation of the strings, declaring classes to make CSS easier
     if (towns[i].name == 'Preston'|| towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
+        console.log(towns[i].photo);
     
     h2.textContent = towns[i].name;
     motto.textContent = "Town Motto:" + " " + towns[i].motto;    
     year.textContent = "Year Established:" + " " + towns[i].yearFounded;
     pop.textContent = "Current Population:" + " " + towns[i].currentPopulation;
     rain.textContent = "Annual Rainfall:" + " " +  towns[i].averageRainfall;
-    image.setAttribute('src', `img/${towns[i].photo}`);
+    image.setAttribute('src', `images/${towns[i].photo}`);
     image.setAttribute('alt', towns[i].name);
     image.setAttribute('class', 'townimg');
     card.setAttribute('class', "home_sect" );
