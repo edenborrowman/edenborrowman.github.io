@@ -135,7 +135,7 @@ section.home_sect:nth-child(6) img {
   grid-column: 1/2;
 }
 
-section.home_sect:nth-child(6) div.home_town_text {
+section.home_sect:nth-child(3) div.home_town_text {
 	grid-column: 2/3;
 	grid-row: 1;
 }
