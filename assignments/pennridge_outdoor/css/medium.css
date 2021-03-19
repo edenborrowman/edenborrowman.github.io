@@ -79,6 +79,13 @@ td#forecast1{
     margin-right: -5px;
   }
 
+  img.artc {
+    float: right;
+    padding: 0px 20px 20px 20px;
+    width: 450px;
+    margin-right: -5px;
+  }
+
   iframe {
     display: block;
     width: 100%;

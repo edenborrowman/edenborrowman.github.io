@@ -199,6 +199,7 @@ div#mapdiv {
 
 div#five_day {
   display: none;
+  padding-top: 3rem;
 }
 
 .clearfix:after {
@@ -217,6 +218,17 @@ img#ice_shack {
   width: 96%;
   margin: 0 2%;
   background-color: white;
+}
+article.townart {
+  padding-top: 3rem;
+  
+}
+img.artc {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+  background-color: white;
+ 
 }
 .smicon {
   width: 30px;
