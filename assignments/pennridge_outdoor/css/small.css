@@ -156,14 +156,19 @@ main {
 h2.city {
   padding-top: 20px;
 }
+.contentbox_1 {
+  padding-bottom: 8rem;
+  padding-top: 2rem;
 
+}
 .contentbox {
   background-color: #99b4bf;
-  padding: 12px;
+  padding: 2rem;
   display: block;
   margin: 10px auto;
   border: 1px;
   color: black;
+  
 }
 
 footer {
@@ -208,10 +213,6 @@ div#five_day {
   clear: both;
 }
 
-div.contentbox {
-  padding: 20px;
-  margin: 20px 0px 20px 0px;
-}
 
 img#ice_shack {
   display: block;
