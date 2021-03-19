@@ -37,7 +37,9 @@
     font-size: 3rem;
   grid-column: 2/6;
   margin: 0;
-  text-align: left;
+  text-align: left; 
+  padding-top: 3rem; 
+  
 }
 
   h2.headertitle {
@@ -52,20 +54,22 @@
   nav {
     grid-column: 1/6;
     width: 64rem;
+  } 
+  
+  #pancakes.announcement {
+    position:absolute;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 5rem;    
   }
 
   #headerimg_small {
     padding-right: 2em;
     width: 300px;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-left: 10%;
   }
-  #pancakes.announcement {
-    position: absolute;
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 5rem;
-  }
+ 
 
   main {
     max-width: 64rem;
