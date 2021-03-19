@@ -136,11 +136,26 @@
       </div>
 
       <h2>Ice Fishing Extravaganza</h2>
-      <img
-        id="ice_shack"
-        src="images/preston_ice_fishing.jpg"
-        alt="an ice fishing shack on the local lake"
-      />
+      <picture>
+        <source
+          media="(max-width: 400px)"
+          srcset="images/soda_springs_river400.jpg.jpg"
+        />
+        <source
+          media="(max-width: 800px)"
+          srcset='images/soda_springs_river800.jpg'
+        />
+        <source
+          media="(max-width: 1200px)"
+          srcset='images/soda_springs_river1200.jpg'
+        />
+        <img
+          class="artc"
+          src="images/soda_springs_river1200.jpg"
+          alt="Soda Springs river"
+          loading="lazy"
+        />
+      </picture>
 
       <div class="contentbox_1">
         <p>
