@@ -110,6 +110,7 @@ div.herodiv {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  margin-bottom: 4rem;
   text-align: center;
   }
 
@@ -126,6 +127,7 @@ div.herodiv {
   grid-row-gap: .5rem;
   text-align: left;
   padding: 15px;
+  
   
 }
 
@@ -154,11 +156,14 @@ main {
   padding: 1rem;
 }
 h2.city {
-  padding-top: 20px;
+  padding-top: 3rem;
 }
-.contentbox_1 {
-  padding-bottom: 8rem;
-  padding-top: 2rem;
+
+h2.art_title {
+  padding-top: 3rem;
+}
+.contentbox_1 {  
+  padding-top: 1rem;
 
 }
 .contentbox {

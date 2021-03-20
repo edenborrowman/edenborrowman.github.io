@@ -26,10 +26,15 @@
   .weather_icon {
     width: 100px;
   }
-
+div.herodiv {
+  margin-bottom: 0;
+}
+h2.city {
+  padding-bottom: 2rem;
+}
   div#five_day {
     display: block;
-    width: 100%;
+    width: 100%;    
   }
 
   tbody {
@@ -38,7 +43,8 @@
   
   table#forecast_table {
     width: 85%;
-    padding-bottom: 45px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
   th,
   td {
