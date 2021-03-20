@@ -82,7 +82,6 @@
 
   div#weather_pics {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1fr;
   }
 
   h2.gal_hl {
@@ -118,4 +117,4 @@ article#index_article {
   margin-top: 2rem;
 }
  
-} /* end of media query
+} 
