@@ -442,6 +442,7 @@ img.townimg {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
   margin-top: 2rem;
   padding: 1%;
+  text-align: left;
 }
 }
   
