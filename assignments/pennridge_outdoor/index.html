@@ -44,10 +44,10 @@
       <nav id="headernav">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-          <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/index.html">Home</a></li>
+          <li class="active"><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/index.html">Home</a></li>
           <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/preston.html">Preston</a></li>
           <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/sodasprings.html">Soda Springs</a></li>
-          <li class="active"><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/fishaven.html">Fish Haven</a></li>
+          <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/fishaven.html">Fish Haven</a></li>
           <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/stormcenter.html">Storm Center</a></li>
           <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/gallery.html">Gallery</a></li>
         </ul>
@@ -56,8 +56,26 @@
 
     <main class="index_main">
       <div class="herodiv">
-      <img class="heroimg" src="images/sodasprings.jpg" alt="beautiful Soda Springs, Idaho">
-      </div>
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="images/prestonspring400.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset='images/prestonspring800.jpg'
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset='images/prestonspring1200.jpg'
+          />
+          <img
+            class="heroimg"
+            src="images/prestonspring1200.jpg"
+            alt="idaho night sky"
+            loading="lazy"
+          />
+        </picture>
      <div class="town_div">
       </div>
 
