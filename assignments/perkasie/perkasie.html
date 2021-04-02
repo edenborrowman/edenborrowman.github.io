@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Pennridge Outdoor</title>
+    <meta name="A community-friendly page with weather, news, and information for the Preston, Idaho community." />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  
+</head>
+
+<body>
+    <header>
+      <span id="weather_alert">Announcement</span>
+        <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->
+       
+        <section class="headings1">
+            <img id="headerimg" src="images/logo.svg" alt="The Perkasie Borough Chamber logo, a compas" />
+           <h1 class="headertitle1">Perkasie Borough</h1>
+            <br />
+        </section>
+        <div class="headings2">
+            <h2 class="headertitle2">
+                Chamber Of Commerce
+            </h2>
+        </div>
+        <nav id="headernav">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a
+                        href="https://edenborrowman.github.io/assignments/pennridge_outdoor/index.html">Home</a></li>
+                <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/preston.html">Preston</a>
+                </li>
+                <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/sodasprings.html">Perkasie</a></li>
+                <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/fishaven.html">Join</a>
+                </li>
+                <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/stormcenter.html">Directory</a></li>
+                <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/gallery.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="index_main">
+        <div class="herodiv">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/bridge400.jpg" />
+                <source media="(max-width: 800px)" srcset="images/bridge800.jpg" />
+                <source media="(max-width: 1200px)" srcset="images/bridge1200.jpg" />
+                <img class="heroimg" src="images/bridge1200.jpg" alt="covered red bridge" loading="lazy" />
+            </picture>
+            <section class="weathersummary">
+                <h3 id="weather_summary">Weather Summary</h3>
+                <span id="current"> Current Condition:</span>
+                <span id="cond"></span>
+                <span id="high">Temperature:</span>
+                <span> <span id="temp"></span>&deg; F </span>
+                <span id="humidity">Humidity:</span>
+                <span id="humid_pct"></span>
+                <span id="wind">Wind Speed:</span>
+                <span> <span id="speed"></span> mph </span>
+                <span id="windchill">Wind Chill:</span>
+                <span id="windchill_num"></span>
+              </section>
+            </div>
+
+            <article id="index_article">
+                <h2>WELCOME TO PERKASIE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore, quia delectus voluptate excepturi accusamus possimus, quod deleniti architecto mollitia fugiat a ad facere ex minima. Nulla aperiam reiciendis voluptates atque magni optio ipsum fuga, laudantium asperiores molestias debitis voluptatum libero dolorum esse dolores at quae pariatur. Exercitationem vero eaque blanditiis reiciendis. Eius iste maiores eaque consequuntur quia tempore consectetur, sed eos totam, qui rem dolorum reiciendis ipsum mollitia debitis suscipit quasi. Quis quaerat ipsa, temporibus expedita magnam iste sit fugit? Commodi nam, sint excepturi cupiditate, consequuntur possimus explicabo cumque alias molestiae at placeat hic optio tempora, mollitia nemo nesciunt voluptatibus eveniet enim necessitatibus unde! Non, est doloribus? Pariatur, suscipit incidunt? Eaque incidunt eum consectetur quia, culpa minus odio voluptas magni perferendis minima sed dolorem molestias? Obcaecati, necessitatibus vitae! Explicabo numquam natus voluptatibus! Maiores obcaecati voluptatibus, fugit accusamus quae necessitatibus quis, assumenda soluta debitis, est mollitia amet ipsum dolores ipsam recusandae. Culpa rerum odit quam sequi nam amet, natus sunt repellendus aperiam, exercitationem, nihil fuga? Quo consectetur hic ad vitae impedit officiis natus, dolorum amet itaque animi facere sint enim! Accusamus beatae nobis, nisi id fugiat autem cum. Sapiente, consequatur rerum, ratione iste voluptates asperiores est suscipit iure unde dolore quas maxime nam possimus delectus cumque officia, molestiae voluptatibus soluta illum aliquid sunt sint cupiditate? Quam assumenda expedita mollitia consequatur voluptates in harum, nam error possimus nemo officiis pariatur culpa enim consequuntur praesentium aliquam porro ex maxime distinctio esse nihil vel ea voluptate! Exercitationem reprehenderit enim voluptate molestias soluta non.
+                </p>
+                
+            </article>
+            <div class="three_day">
+                <table id="forecast_table" class="center">
+                    <caption>
+                      <h3 class="five_day_title">Three Day Forecast</h3>
+                    </caption>
+                    <tr class="color_table">
+                      <td id="day1"><p></p></td>
+                      <td id="day2"><p></p></td>
+                      <td id="day3"><p></p></td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <img id="img1"></img> &nbsp;
+                          <img src="" alt="" id="icon1" />
+                       
+                      </td>
+                      <td>
+                          <img id="img2"></img> &nbsp;
+                          <img src="" alt="" id="icon2" />
+                      </td>
+                      <td>
+                          <img id="img3"></img> &nbsp;
+                          <img src="" alt="" id="icon3" />
+                      </td>
+                     
+                    </tr>
+                    <tr class="color_table">
+                      <td id='forecast1'><p> &deg;</p></td>
+                      <td id='forecast2'><p> &deg;</p></td>
+                      <td id='forecast3'><p> &deg;</p&deg;</p></td>
+                     
+                    </tr>
+                  </table>
+
+            </div>
+            
+              
+
+            <div id="lion_div">
+            
+                <h2 class="textflare" id="flare1">America's Home Town</h2>
+                <img id="lion" src="images/perk_lion.jpg" alt="the famous Perkasie lion" loading="lazy">
+                <img class="quotmrks" id="openqt" src="images/open_quote.svg" alt="decorative quotation mark" loading="lazy">
+                <p id="lion_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel dolorum libero dolore laboriosam ipsa repellendus adipisci veniam laborum, ex culpa modi eveniet eaque sequi, sunt iure deserunt voluptate harum nostrum. Consectetur voluptate, at consequuntur ipsum quas expedita nemo exercitationem incidunt. Numquam dolorum necessitatibus quisquam ullam reprehenderit, ut pariatur perspiciatis dolor repellendus reiciendis sequi fugit quas earum officiis. Dolorem, iusto.</p>
+                <img class="quotmrks" id="closeqt" src="images/close_quote.svg" alt="decorative quotation mark" loading="lazy">
+                <hr class="home_line">
+
+                
+            
+            </div>
+            <section>
+                <h2 class="textflare" id="flare2">Perkasie, PA</h2>
+                <picture>
+                    <source
+                      media="(max-width: 400px)"
+                      srcset="images/bee400.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset='images/bee800.jpg'
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset='images/bee1200.jpg'
+                    />
+                    <img
+                      class="index_gal"
+                      src="images/bee1200.jpg"
+                      alt="lazy bumble enjoys fragrant Perkasie honeysuckle"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <picture>
+                    <source
+                      media="(max-width: 400px)"
+                      srcset="images/grave400.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset='images/grave800.jpg'
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset='images/grave1200.jpg'
+                    />
+                    <img
+                      class="index_gal"
+                      src="images/grave1200.jpg"
+                      alt="Local graveyard"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <picture>
+                    <source
+                      media="(max-width: 400px)"
+                      srcset="images/piggy400.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset='images/piggy800.jpg'
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset='images/piggy1200.jpg'
+                    />
+                    <img
+                      class="index_gal"
+                      src="images/piggy1200.jpg"
+                      alt="The Perkasie Ford in summer bloom"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <hr class="home_line">
+            </section>
+            <section>
+                <h2 class="headline_right" id="index_hl_2">THE PERKASIE CHAMBER OF COMMERCE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa maxime soluta eum modi, magnam quas tempora? Omnis, minima quidem hic impedit quam sint accusamus eveniet architecto libero ea consequuntur repudiandae, animi provident modi in temporibus harum cum rerum sapiente beatae! Harum ab, aspernatur natus tempora soluta, illo molestiae fugiat, sit eius sint at autem! Inventore possimus doloribus impedit optio voluptatibus delectus itaque soluta corrupti provident. Nesciunt sed ab repudiandae tenetur odit ducimus consequuntur sunt incidunt quidem non perferendis voluptates animi nam fuga sequi illum qui eligendi voluptate, facere asperiores. Perferendis temporibus dignissimos sequi atque ratione quia. Doloremque enim molestiae obcaecati, hic molestias ipsa optio tempora possimus! Obcaecati autem quod maiores, numquam eius nesciunt repudiandae consectetur mollitia, reiciendis commodi dolorum maxime temporibus modi quaerat eaque adipisci consequatur accusamus distinctio aut laborum. Laboriosam incidunt enim esse, laudantium quis repudiandae quisquam commodi quam eum accusantium eos ipsa eligendi, quibusdam officiis aliquid voluptas nobis qui illo itaque consectetur. Suscipit sunt, ullam consequatur, quisquam ab vitae provident voluptas rem, unde est delectus. Repellat sint quibusdam, ut dignissimos sapiente inventore aut ipsa tempora nulla fugit? Mollitia adipisci corrupti, voluptatem expedita quo doloribus, nostrum illo, sint magnam iusto accusantium cum fugit repudiandae inventore explicabo et nam nihil architecto! Sequi corrupti odit corporis, perferendis alias qui cupiditate dignissimos voluptas omnis ab expedita quasi quae tempore esse, suscipit commodi quia! Nemo natus perferendis, debitis nisi temporibus suscipit assumenda provident aspernatur ducimus totam tenetur modi ipsam fugit pariatur in hic, explicabo eligendi neque repellat. Quasi debitis culpa praesentium dolorem!</p>
+
+                <img id="leafbutton" src="images/single_leaf.png" alt="a single fall maple leaf" loading="lazy">
+                <h3 id="index_hl_3">JOIN US</h3>
+                <hr class="home_line">
+            </section>
+            <section>
+                <h2 class="textflare" id="flare3">Upcoming Events</h2>
+                <picture>
+                    <source
+                      media="(max-width: 400px)"
+                      srcset="images/tomatoes400.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset='images/tomatoes800.jpg'
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset='images/tomatoes1200.jpg'
+                    />
+                    <img
+                      class="index_gal"
+                      src="images/tomatoes1200.jpg"
+                      alt="The Perkasie Ford in summer bloom"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                <h4 class="headline_right">Perkasie 5th Street<br> Farmer's Market</h4>
+                <h5 class="headline_right"> Saturdays, 8:00 a.m.<br> to 1:00p.m.<br><br>
+                April through October, <br> rain or shine</h5>
+                <hr class="home_line">     
+                </section>
+                <section class="weather">
+            
+                </section>
+
+
+
+
+            <!---------------------- Map and Contact Info--------------->
+            <div id="mapdiv">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24319.561701650786!2d-75.3116847680805!3d40.36573915519624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c41e5341101ed9%3A0xcaea757af06fa9b8!2sPerkasie%2C%20PA%2018944!5e0!3m2!1sen!2sus!4v1617062423128!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                
+            
+    </main>
+
+    <!---------------------------- Footer -------------------------->
+    <footer>
+        <section id="contact_info">
+            <h4>Contact Us!</h4>
+            <p>
+                Perkasie Borough Chamber of Commerce<br />
+                55 Main St<br />
+                Perkasie, PA 18944<br /><br />
+                &#9742; &nbsp; 208 555-5555<br /><br />
+                &#9993; &nbsp; perk@perkasiechamber.com<br />
+            </p>
+            <a
+                href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"><img
+                    class="smicon" src="images/Github.png" alt="git hub icon" /></a>
+            <a href="https://twitter.com/"><img class="smicon" src="images/Twitter.png"
+                    alt="twitter icon" /></a>
+            <a href="https://www.instagram.com/"><img class="smicon" src="images/Instagram.png"
+                    alt="instagram icon" /></a>
+            <a href="https://www.facebook.com/"><img class="smicon" loading="lazy" src="images/Facebook.png"
+                    alt="facebook icon" /></a>
+        </section>
+        <p>
+            &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+            
+        </p>
+        <span id="currentdate"></span><br /><br />
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Big Shoulders Display", "Bodoni Moda", "Poppins", "Allura"],
+            },
+        });
+    </script>
+</body>
+
+</html>

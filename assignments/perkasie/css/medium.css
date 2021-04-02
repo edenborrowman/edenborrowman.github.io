@@ -1,0 +1,86 @@
+@media only screen and (min-width: 35rem) {
+
+    div.three_day {
+        display: block;
+    }
+
+/* table styling */
+    tbody {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+      }
+      
+      table#forecast_table {
+        width: 85%;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+        color: white;
+      }
+    
+      .color_table {
+        background-color:#A2bf63;
+      }
+     
+    td#dayofweek1 {
+      padding: 1rem;
+    }
+    
+    td#forecast1{
+      padding: 1rem;
+    }
+      table.center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      h3.five_day_title {
+        font-size: 1.5rem;
+      }
+
+      div#lion_div {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-column-gap: 5rem;
+        }
+
+        h2#flare1 {
+          grid-column: 2/3;
+          grid-row: 1;
+          align-items: start;
+        }
+    
+        img#lion {
+            grid-column: 1/2;
+            grid-row: 1/5;
+            margin: 0;            
+            width: 100%;
+        }
+
+        p#lion_text {
+            grid-column: 2/3;
+            grid-row: 2/5;
+            margin-top: 8rem;
+            padding-left: 2rem;
+           
+        }
+
+        img#openqt {
+
+          grid-column:2/3;
+          grid-row: 2/5;
+          z-index: -1;
+        }
+        
+        img#closeqt {
+          grid-column: 2/3;
+          grid-row: 4/5;
+          justify-self: end;
+          z-index: -1;
+        }
+
+}

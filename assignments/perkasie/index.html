@@ -19,6 +19,7 @@
 
 <body>
     <header>
+      <span id="weather_alert">Announcement</span>
         <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->
        
         <section class="headings1">
@@ -51,11 +52,24 @@
     <main class="index_main">
         <div class="herodiv">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/red_bridge400.jpg" />
-                <source media="(max-width: 800px)" srcset="images/red_bridge800.jpg" />
-                <source media="(max-width: 1200px)" srcset="images/red_bridge1200.jpg" />
-                <img class="heroimg" src="images/red_bridge1200.jpg" alt="covered red bridge" loading="lazy" />
+                <source media="(max-width: 400px)" srcset="images/bridge400.jpg" />
+                <source media="(max-width: 800px)" srcset="images/bridge800.jpg" />
+                <source media="(max-width: 1200px)" srcset="images/bridge1200.jpg" />
+                <img class="heroimg" src="images/bridge1200.jpg" alt="covered red bridge" loading="lazy" />
             </picture>
+            <section class="weathersummary">
+                <h3 id="weather_summary">Weather Summary</h3>
+                <span id="current"> Current Condition:</span>
+                <span id="cond"></span>
+                <span id="high">Temperature:</span>
+                <span> <span id="temp"></span>&deg; F </span>
+                <span id="humidity">Humidity:</span>
+                <span id="humid_pct"></span>
+                <span id="wind">Wind Speed:</span>
+                <span> <span id="speed"></span> mph </span>
+                <span id="windchill">Wind Chill:</span>
+                <span id="windchill_num"></span>
+              </section>
             </div>
 
             <article id="index_article">
@@ -64,18 +78,56 @@
                 </p>
                 
             </article>
+            <div class="three_day">
+                <table id="forecast_table" class="center">
+                    <caption>
+                      <h3 class="five_day_title">Three Day Forecast</h3>
+                    </caption>
+                    <tr class="color_table">
+                      <td id="day1"><p></p></td>
+                      <td id="day2"><p></p></td>
+                      <td id="day3"><p></p></td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <img id="img1"></img> &nbsp;
+                          <img src="" alt="" id="icon1" />
+                       
+                      </td>
+                      <td>
+                          <img id="img2"></img> &nbsp;
+                          <img src="" alt="" id="icon2" />
+                      </td>
+                      <td>
+                          <img id="img3"></img> &nbsp;
+                          <img src="" alt="" id="icon3" />
+                      </td>
+                     
+                    </tr>
+                    <tr class="color_table">
+                      <td id='forecast1'><p> &deg;</p></td>
+                      <td id='forecast2'><p> &deg;</p></td>
+                      <td id='forecast3'><p> &deg;</p&deg;</p></td>
+                     
+                    </tr>
+                  </table>
 
+            </div>
+            
+              
 
-            <section>
+            <div id="lion_div">
+            
                 <h2 class="textflare" id="flare1">America's Home Town</h2>
                 <img id="lion" src="images/perk_lion.jpg" alt="the famous Perkasie lion" loading="lazy">
                 <img class="quotmrks" id="openqt" src="images/open_quote.svg" alt="decorative quotation mark" loading="lazy">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel dolorum libero dolore laboriosam ipsa repellendus adipisci veniam laborum, ex culpa modi eveniet eaque sequi, sunt iure deserunt voluptate harum nostrum. Consectetur voluptate, at consequuntur ipsum quas expedita nemo exercitationem incidunt. Numquam dolorum necessitatibus quisquam ullam reprehenderit, ut pariatur perspiciatis dolor repellendus reiciendis sequi fugit quas earum officiis. Dolorem, iusto.</p>
+                <p id="lion_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel dolorum libero dolore laboriosam ipsa repellendus adipisci veniam laborum, ex culpa modi eveniet eaque sequi, sunt iure deserunt voluptate harum nostrum. Consectetur voluptate, at consequuntur ipsum quas expedita nemo exercitationem incidunt. Numquam dolorum necessitatibus quisquam ullam reprehenderit, ut pariatur perspiciatis dolor repellendus reiciendis sequi fugit quas earum officiis. Dolorem, iusto.</p>
                 <img class="quotmrks" id="closeqt" src="images/close_quote.svg" alt="decorative quotation mark" loading="lazy">
                 <hr class="home_line">
 
                 
-            </section>
+            
+            </div>
             <section>
                 <h2 class="textflare" id="flare2">Perkasie, PA</h2>
                 <picture>
@@ -146,7 +198,40 @@
 
                 <img id="leafbutton" src="images/single_leaf.png" alt="a single fall maple leaf" loading="lazy">
                 <h3 id="index_hl_3">JOIN US</h3>
+                <hr class="home_line">
             </section>
+            <section>
+                <h2 class="textflare" id="flare3">Upcoming Events</h2>
+                <picture>
+                    <source
+                      media="(max-width: 400px)"
+                      srcset="images/tomatoes400.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset='images/tomatoes800.jpg'
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset='images/tomatoes1200.jpg'
+                    />
+                    <img
+                      class="index_gal"
+                      src="images/tomatoes1200.jpg"
+                      alt="The Perkasie Ford in summer bloom"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                <h4 class="headline_right">Perkasie 5th Street<br> Farmer's Market</h4>
+                <h5 class="headline_right"> Saturdays, 8:00 a.m.<br> to 1:00p.m.<br><br>
+                April through October, <br> rain or shine</h5>
+                <hr class="home_line">     
+                </section>
+                <section class="weather">
+            
+                </section>
+
 
 
 
@@ -186,7 +271,9 @@
         <span id="currentdate"></span><br /><br />
     </footer>
     <script src="js/currentdate.js"></script>
+    <script src="js/weatherapi.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/forecast.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
