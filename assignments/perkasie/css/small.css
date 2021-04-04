@@ -447,7 +447,7 @@
       align-items: center;
   }
   
-  img.farmhouse{
+%;  img.farmhouse{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -492,8 +492,23 @@
     text-align: left;
   }
   
-    /* table styling */
+    /* index card styling */
     
   div.three_day {
     display: none;
+  }
+
+  div.div_text {
+    max-width: 96%;
+    max-height: 30rem;
+    margin-bottom: 5rem;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    justify-content: center;
+   
+  }
+
+  img.directory_logo {
+    max-width: 50%;
+    padding: .5rem;
   }

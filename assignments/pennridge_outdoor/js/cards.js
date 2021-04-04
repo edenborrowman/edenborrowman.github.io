@@ -7,7 +7,7 @@ fetch(requestURL)
 
 .then(function (jsonObject) {
     // check for json object
-    // console.table(jsonObject);
+    console.table(jsonObject);
 
 const towns = jsonObject['towns'];
     

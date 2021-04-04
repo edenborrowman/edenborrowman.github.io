@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Pennridge Outdoor</title>
+    <meta name="A community-friendly page with weather, news, and information for the Preston, Idaho community." />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+</head>
+
+<body>
+    <header>
+        <span id="weather_alert">Announcement</span>
+        <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->
+
+        <section class="headings1">
+            <img id="headerimg" src="images/logo.svg" alt="The Perkasie Borough Chamber logo, a compas" />
+            <h1 class="headertitle1">Perkasie Borough</h1>
+            <br />
+        </section>
+        <div class="headings2">
+            <h2 class="headertitle2">
+                Chamber Of Commerce
+            </h2>
+        </div>
+        <nav id="headernav">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a
+                        href="https://edenborrowman.github.io/assignments/perkasie/index.html">Home</a></li>
+                 <li><a href="https://edenborrowman.github.io/assignments/perkasie/perkasie.html">Perkasie</a></li>
+                <li><a href="https://edenborrowman.github.io/assignments/perkasie/join.html">Join</a>
+                </li>
+                <li class="active"><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/directory.html">Directory</a></li>
+                <li><a href="https://edenborrowman.github.io/assignments/perkasie/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="index_main">
+        <div class="herodiv">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/bridge400.jpg" />
+                <source media="(max-width: 800px)" srcset="images/bridge800.jpg" />
+                <source media="(max-width: 1200px)" srcset="images/bridge1200.jpg" />
+                <img class="heroimg" src="images/bridge1200.jpg" alt="covered red bridge" loading="lazy" />
+            </picture>
+            <section class="weathersummary">
+                <h3 id="weather_summary">Weather Summary</h3>
+                <span id="current"> Current Condition:</span>
+                <span id="cond"></span>
+                <span id="high">Temperature:</span>
+                <span> <span id="temp"></span>&deg; F </span>
+                <span id="humidity">Humidity:</span>
+                <span id="humid_pct"></span>
+                <span id="wind">Wind Speed:</span>
+                <span> <span id="speed"></span> mph </span>
+                <span id="windchill">Wind Chill:</span>
+                <span id="windchill_num"></span>
+            </section>
+        </div>
+
+        <div class="cards"></div>
+    </main>
+
+    <!---------------------------- Footer -------------------------->
+    <footer>
+        <section id="contact_info">
+            <h4>Contact Us!</h4>
+            <p>
+                Perkasie Borough Chamber of Commerce<br />
+                55 Main St<br />
+                Perkasie, PA 18944<br /><br />
+                &#9742; &nbsp; 208 555-5555<br /><br />
+                &#9993; &nbsp; perk@perkasiechamber.com<br />
+            </p>
+            <a
+                href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"><img
+                    class="smicon" src="images/Github.png" alt="git hub icon" /></a>
+            <a href="https://twitter.com/"><img class="smicon" src="images/Twitter.png" alt="twitter icon" /></a>
+            <a href="https://www.instagram.com/"><img class="smicon" src="images/Instagram.png"
+                    alt="instagram icon" /></a>
+            <a href="https://www.facebook.com/"><img class="smicon" loading="lazy" src="images/Facebook.png"
+                    alt="facebook icon" /></a>
+        </section>
+        <p>
+            &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+
+        </p>
+        <span id="currentdate"></span><br /><br />
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Big Shoulders Display", "Bodoni Moda", "Poppins", "Allura"],
+            },
+        });
+    </script>
+</body>
+
+</html>

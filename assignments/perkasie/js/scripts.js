@@ -10,13 +10,11 @@ function preloadImage(img) {
   img.removeAttribute("data-src");
 }
 
-//will start loading .img file when it is 300px below the viewport)
 const imgOptions = {
   threshold: 0,
   rootMargin: "0px 0px 300px 0px",
 };
 
-//loop through the images and determine which ones need to be shown
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
@@ -35,3 +33,54 @@ images.forEach((image) => {
 function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
 }
+
+// Directory Page JS
+
+const requestURL = "perk.json";
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+   
+    const businesses = jsonObject['businesses'];
+ 
+    for (let i = 0; i < businesses.length; i++) {
+  
+
+      let card = document.createElement('section');
+      let h2 = document.createElement('h2');
+      let add1 = document.createElement('p');
+      let add2 = document.createElement('p');
+      let phone = document.createElement('p');
+      let www = document.createElement('p');
+      let image = document.createElement('img');
+      let textd = document.createElement('div')
+      
+     
+      
+      h2.textContent = businesses[i].name;
+      add1.textContent = businesses[i].address1;  
+      add2.textContent = businesses[i].address2;
+      phone.textContent = businesses[i].phone;
+      www.textContent = businesses[i].web_address;
+      image.setAttribute('src', `images/${businesses[i].logo}`);
+      image.setAttribute('alt', businesses[i].name + ' logo');
+      image.setAttribute('class', 'directory_logo');
+      card.setAttribute = ('class', 'directory_card');
+      textd.setAttribute('class', 'div_text');
+      
+      
+        card.appendChild(textd);
+        textd.appendChild(h2);
+         textd.appendChild(add1);
+         textd.appendChild(add2);
+         textd.appendChild(phone);
+         textd.appendChild(www);
+         textd.appendChild(image);
+
+      document.querySelector('div.cards').appendChild(card);
+    }
+
+    });

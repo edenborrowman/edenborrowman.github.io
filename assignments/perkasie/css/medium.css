@@ -82,5 +82,11 @@
           justify-self: end;
           z-index: -1;
         }
+        div.cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        
+        }
+    
 
 }

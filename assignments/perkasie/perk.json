@@ -5,63 +5,68 @@
         "address1": "501 E Walnut St",
         "address2": "Perkasie, PA 18944",
         "category": "restaurant",
-        "phone number": "215 257-8483",
+        "phone": "215 257-8483",
         "web_address": "www.attheperk.com",
-        "logoURL": "to come"
+        "logo": "perk.jpeg"
       },
-      {
-        "name": "The Ram",
-        "address1": "606 W Chestnut St",
-        "address2": "Perkasie, PA 18944",
-        "category": "restaurant",
-        "phone number": "267 404-7455",
-        "web_address": "www.ramperkasie.com",
-        "logoURL": "to come"
-      },
+      
       {
         "name": "Modern Male Barber Shop",
         "address1": "514 W Walnut St",
         "address2": "Perkasie, PA 18944",
         "category": "service",
-        "phone number": "215 859-7049",
+        "phone": "215 859-7049",
         "web_address": "www.modernmalebarbershop.com",
-        "logoURL": "to come"
+        "logo": "modernmale.png"
       },
       {
         "name": "Bliss Salon & Color Studio",
         "address1": "19 North 7th St",
         "address2": "Perkasie, PA 18944",
         "category": "service",
-        "phone number": "215 453-1600",
+        "phone": "215 453-1600",
         "web_address": "www.blisssalonandcolorstudio.org",
-        "logoURL": "to come"
-      },
-      {
-        "name": "Maize",
-        "address1": "519 W Walnut St",
-        "address2": "Perkasie, PA 18944",
-        "category": "restaurant",
-        "phone number": "215 257-2264",
-        "web_address": "www.maizeonwalnut.com",
-        "logoURL": "to come"
-      },
-      {
-        "name": "Bloom Flower Co.",
-        "address1": "5 N 7th St",
-        "address2": "Perkasie, PA 18944",
-        "category": "retail",
-        "phone number": "215 257-4080",
-        "web_address": "www.bloomflowerco.com",
-        "logoURL": "to come"
+        "logo": "bliss.png"
       },
       {
         "name": "Old Glory Barber Shop",
         "address1": "11 N 7th St",
         "address2": "Perkasie, PA 18944",
         "category": "service",
-        "phone number": "215 237-9742",
+        "phone": "215 237-9742",
         "web_address": "www.ogbarbershop.com",
-        "logoURL": "to come"
+        "logo": "oldglory.png"
+      },
+     
+      {
+        "name": "Maize",
+        "address1": "519 W Walnut St",
+        "address2": "Perkasie, PA 18944",
+        "category": "restaurant",
+        "phone": "215 257-2264",
+        "web_address": "www.maizeonwalnut.com",
+        "logo": "maize.jpeg"
+      },
+     
+     {
+        "name": "The Ram",
+        "address1": "606 W Chestnut St",
+        "address2": "Perkasie, PA 18944",
+        "category": "restaurant",
+        "phone": "267 404-7455",
+        "web_address": "www.ramperkasie.com",
+        "logo": "ram.png"
+      },
+     
+   
+      {
+        "name": "Bloom Flower Co.",
+        "address1": "5 N 7th St",
+        "address2": "Perkasie, PA 18944",
+        "category": "retail",
+        "phone": "215 257-4080",
+        "web_address": "www.bloomflowerco.com",
+        "logo": "bloom.png"
       }
    
     ]
