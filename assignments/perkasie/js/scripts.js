@@ -57,6 +57,7 @@ fetch(requestURL)
       let www = document.createElement('p');
       let image = document.createElement('img');
       let textd = document.createElement('div')
+      let a = document.createElement('a');
       
      
       
@@ -64,7 +65,8 @@ fetch(requestURL)
       add1.textContent = businesses[i].address1;  
       add2.textContent = businesses[i].address2;
       phone.textContent = businesses[i].phone;
-      www.textContent = businesses[i].web_address;
+      a.setAttribute('href', businesses[i].web_address);
+      a.textContent = businesses[i].web_address;
       image.setAttribute('src', `images/${businesses[i].logo}`);
       image.setAttribute('alt', businesses[i].name + ' logo');
       image.setAttribute('class', 'directory_logo');
@@ -77,6 +79,7 @@ fetch(requestURL)
          textd.appendChild(add1);
          textd.appendChild(add2);
          textd.appendChild(phone);
+         textd.appendChild(a);
          textd.appendChild(www);
          textd.appendChild(image);
 
