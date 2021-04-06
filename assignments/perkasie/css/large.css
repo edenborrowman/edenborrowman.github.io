@@ -69,5 +69,36 @@
       grid-row: 3;
       margin-top: 1.5rem;
     }
+    div.bus_spotlight {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2rem;
+    }
+  
+    .sec1 {
+      grid-column: 1;
+    }
+  
+    .sec2 {
+      grid-column: 2;
+    }
+    .sec3 {
+      grid-column: 3;
+      grid-row: 1;
+    }
+  
+    h1.spotlight {
+      font-size: 3.5em;
+    }
+    h2.spotlight {
+      font-size: 2em;
+    }
+     
+    .intro.spotlight {
+      grid-column: 1 / span 3;
+    }
+  .spotlight_img {
+    grid-column: 2/3;
+  }
 
 }
