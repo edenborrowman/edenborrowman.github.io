@@ -4,6 +4,16 @@
         display: block;
     }
 
+    .heroimg {
+      min-height: 300px;
+      max-width: 100%
+      
+    }
+    .weathersummary {
+        left: 1.5rem;
+        top: 1.5rem;
+    }
+
 /* table styling */
     tbody {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
@@ -72,15 +82,16 @@
         img#openqt {
 
           grid-column:2/3;
-          grid-row: 2/5;
+          grid-row: 2;
           z-index: -1;
         }
         
         img#closeqt {
           grid-column: 2/3;
-          grid-row: 4/5;
+          grid-row: 4;
           justify-self: end;
           z-index: -1;
+          
         }
         div.cards {
           display: grid;
@@ -92,6 +103,59 @@
           padding-bottom: 4rem;
           max-width: 40%;
         }
-    
+        div#mapdiv {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 5px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+          text-align: right;
+          align-items: center;
+          justify-items: center;
+          width: 1fr;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        iframe {
+          display: block;
+          width: 100%; 
+          height: 100%;
+          
+        }
 
-}
+        section.farmer {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          column-gap: 2rem;
+          margin-bottom: 15rem;
+          
+        }
+
+        .textflare {
+          font-size: 3rem;
+        }
+
+        #flare3 {
+          grid-column:2;
+          margin-top: 8rem;
+        }
+        #tomatoes {
+          grid-column: 1/2;
+          grid-row: 1/5;
+          margin: 1rem 0 0 0;       
+          z-index: -1;
+          
+        }
+        #market_info {
+          grid-column: 2/3;
+          grid-row:1;
+          margin-top: 35%;
+          text-align: right;
+          font-size: 1.5rem;
+        }
+        p#best {
+          font-size: 1rem;
+          text-align: right;
+          padding-right: 1rem;
+        }
+       }
