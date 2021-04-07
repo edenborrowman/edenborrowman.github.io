@@ -8,11 +8,12 @@ fetch(apiURL)
     jo=jsObject;
 
 //CURRENT WEATHER
+
     document.getElementById("cond").textContent = jo.current.weather[0].main;
     document.getElementById("temp").textContent = Math.round(jo.current.temp);
     document.getElementById("speed").textContent = Math.round(jo.current.wind_speed);
     document.getElementById("humid_pct").textContent = jo.current.humidity + "%";
-    document.getElementById("weather_alert").textContent = jo.alerts[0].description;
+    
 
  //WINDCHILL
 
@@ -74,7 +75,7 @@ fetch(apiURL)
     document.getElementById("img3").textContent = imagesrc3;
     document.getElementById("icon3").setAttribute("src", imagesrc3);
     document.getElementById("icon3").setAttribute("alt", "filler");    
-   
+    document.getElementById("weather_alert").textContent = jo.alerts[0].description;
     
   });
 
