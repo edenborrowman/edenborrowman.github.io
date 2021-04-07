@@ -165,6 +165,10 @@
       width: 75%;
       color: black;
   }
+
+  #gridbut{
+    display: none;
+  }
  
   
    h1.city {
@@ -309,7 +313,6 @@
     float: right;
   }
   
-  
 
   article.townart {
     padding-top: 3rem;
@@ -325,48 +328,13 @@
     display: none;
   }
   
-  div#weather_pics {
-    display: grid;
-    background-color: #99b4bf;
-    grid-template-columns: 1fr;
-  }
-  
-  img.weather_gallery {
-    width: 100%;
-    padding: px;
-    align-items: center;
-    justify-items: center;
-  }
   
   h2.gal_hl {
     font-size: 1rem;
     text-align: center;
   }
   
-  figcaption {
-    text-align: center;
-    color: white;
-  }
-  
-  figure.gallery {
-    margin: 5%;
-  }
-  
-  figure.gallery img[data-src] {
-    filter: blur(0.2em);
-  }
-  
-  figure.gallery img {
-    filter: blur(0em);
-    transition: filter 1.5s;
-  }
-  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-  html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-  
-  /*----------- apply a natural box layout model to all elements --------------*/
-  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  
-  
+ 
   
   /* --------FORM STYLING----------- */
   h1.h1sc {
@@ -519,17 +487,19 @@
   }
 
   div.div_text {
-    max-width: 96%;
-    max-height: 30rem;
+    max-width: 90%;
+    max-height:45rem;
     margin-bottom: 5rem;
-    padding: 3rem;
+    padding: 2%; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
    
   }
 
   img.directory_logo {
-    max-width: 50%;
+   max-width:60%;
     padding: .5rem;
   }
 

@@ -148,15 +148,29 @@ h1.headertitle1 {
           justify-items: end;
           align-content: end;
         }
-        div.cards {
+        .cards {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-        
+          grid-template-columns: 1fr 1fr;        
         }
 
+       .blockcards {
+          display: block;               
+      }
+
+        #gridbut{
+          display: block;
+          width: 50px;
+          padding-bottom: 1rem;
+        }
+
+
         img.directory_logo {
-          padding-bottom: 4rem;
-          max-width: 40%;
+        padding-bottom: 4rem;
+         max-width:220px;
+        }
+
+        div.div_text {         
+         height:35rem;   
         }
         div#mapdiv {
           display: grid;

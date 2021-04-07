@@ -71,46 +71,38 @@
         </div>
         <h1 class="textflare">Our Partners</h1>
 
-        <div class="cards"></div>
+        <input type="image" src="images/gridtogglebutton.png" id="gridbut" onclick="gridtoggle()" />
+        
+      
+        <div class="cards" id="partners"></div>
     </main>
 
     <!---------------------------- Footer -------------------------->
     <footer>
-        <section id="contact_info">
-            <h4>Contact Us!</h4>
-            <p>
-                Perkasie Borough Chamber of Commerce<br />
-                55 Main St<br />
-                Perkasie, PA 18944<br /><br />
-                &#9742; &nbsp; 208 555-5555<br /><br />
-                &#9993; &nbsp; perk@perkasiechamber.com<br />
-            </p>
-            <a
-                href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"><img
-                    class="smicon" src="images/Github.png" alt="git hub icon" /></a>
-            <a href="https://twitter.com/"><img class="smicon" src="images/Twitter.png" alt="twitter icon" /></a>
-            <a href="https://www.instagram.com/"><img class="smicon" src="images/Instagram.png"
-                    alt="instagram icon" /></a>
-            <a href="https://www.facebook.com/"><img class="smicon" loading="lazy" src="images/Facebook.png"
-                    alt="facebook icon" /></a>
-        </section>
-        <p>
-            &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
 
+
+        <p>
+          &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+    
         </p>
         <span id="currentdate"></span><br /><br />
-    </footer>
-    <script src="js/currentdate.js"></script>
-    <script src="js/weatherapi.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
+        <div class="subscript">
+          Last Modified: <span id="lastModified"></span>
+        </div>
+      </footer>
+      <script src="js/currentdate.js"></script>
+      <script src="js/weatherapi.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="js/forecast.js"></script>
+      <script src="js/directory.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
         WebFont.load({
-            google: {
-                families: ["Big Shoulders Display", "Bodoni Moda", "Poppins", "Allura"],
-            },
+          google: {
+            families: ["Big Shoulders Display", "Bodoni Moda", "Poppins", "Allura"],
+          },
         });
-    </script>
-</body>
-
-</html>
+      </script>
+    </body>
+    
+    </html>
