@@ -34,11 +34,8 @@
   }
   
    
-  header img {
-    width: 80px;
-    height: auto;
-    float: right;
-   
+  img#headerimg {
+    width: 80px;  
   }
   
 #alertbutton {

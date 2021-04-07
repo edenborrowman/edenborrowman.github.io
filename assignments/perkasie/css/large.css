@@ -1,5 +1,18 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
+
+  h1.headertitle1 {  
+    font-size: 5.5rem;
+  }
+
+  h2.headertitle2 {
+    font-size: 1.5rem;
+  }
+
+  img#headerimg {
+    width: 150px;
+    margin-left: -4rem;
+      }
     nav {
         width: 64rem;
         align-items: center;
