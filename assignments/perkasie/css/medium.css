@@ -44,8 +44,9 @@ img#headerimg {
       
     }
     .weathersummary {
-        left: 1.5rem;
-        top: 1.5rem;
+        left: 3.5rem;
+        top: 3.5rem;
+        
     }
 
 /* table styling */
@@ -168,13 +169,17 @@ img#headerimg {
         }
 
        .blockcards {
-          display: block;               
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;    
+          width: 100%;  
+                      
       }
 
-        #gridbut{
+        #gridbut, #blockbut{
           display: block;
-          width: 50px;
+          width: 80px;
           padding-bottom: 1rem;
+          padding-right: 1rem;
         }
 
 
@@ -185,6 +190,9 @@ img#headerimg {
 
         div.div_text {         
          height:35rem;   
+        }
+        div#toggle_div {
+          display: flex;
         }
         div#mapdiv {
           display: grid;

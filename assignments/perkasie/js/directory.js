@@ -34,7 +34,7 @@ fetch(requestmyjson)
       image.setAttribute('src', `images/${businesses[i].logo}`);
       image.setAttribute('alt', businesses[i].name + ' logo');
       image.setAttribute('class', 'directory_logo');
-      card.setAttribute = ('class', 'directory_card');
+      card.setAttribute('class', 'directory_card');
       textd.setAttribute('class', 'div_text');
       
       
@@ -58,6 +58,4 @@ function gridtoggle() {
     document.getElementById("partners").classList.toggle("cards");
   }
 
-//   function blocktoggle() {
-//     document.getElementById("partners").classList.toggle("blockcards");
-//   }
+  
