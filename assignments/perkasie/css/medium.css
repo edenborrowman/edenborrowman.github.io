@@ -122,8 +122,9 @@ h1.headertitle1 {
         p#lion_text {
             grid-column: 2/3;
             grid-row: 2/5;
-            margin-top: 8rem;
+            margin-top: 10rem;
             padding-left: 2rem;
+            font-size: 1.2rem;
            
         }
 
@@ -138,6 +139,7 @@ h1.headertitle1 {
           grid-column: 2/3;
           grid-row: 4;
           justify-self: end;
+         
           z-index: -1;
           
         }
