@@ -14,39 +14,40 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-
+  
 </head>
 
 <body>
     <header>
-        <div id="header_org">
-            <img id="headerimg" src="images/logo.svg" alt="The Perkasie Borough Chamber logo, a compas" />
-            <section class="headings1">
-              <hr class="headerline">                
-               <h1 class="headertitle1">Perkasie Borough</h1>
-                <br />
-            </section>
-            <div class="headings2">
-                <h2 class="headertitle2">
-                    Chamber Of Commerce
-                </h2>
-            </div> 
-          </div>
+        <span id="weather_alert">Announcement</span>
+       <div id="header_org">
+        <img id="headerimg" src="images/logo.svg" alt="The Perkasie Borough Chamber logo, a compas" />
+        <section class="headings1">
+          <hr class="headerline">
+            
+           <h1 class="headertitle1">Perkasie Borough</h1>
+            <br />
+        </section>
+        <div class="headings2">
+            <h2 class="headertitle2">
+                Chamber Of Commerce
+            </h2>
+        </div> 
+      </div>
         <nav id="headernav">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a
-                        href="https://edenborrowman.github.io/assignments/perkasie/index.html">Home</a></li>
-                 <li><a href="https://edenborrowman.github.io/assignments/perkasie/perkasie.html">Perkasie</a></li>
-                <li><a href="https://edenborrowman.github.io/assignments/perkasie/join.html">Join</a>
-                </li>
-                <li class="active"><a href="https://edenborrowman.github.io/assignments/perkasie/directory.html">Directory</a></li>
-                <li><a href="https://edenborrowman.github.io/assignments/perkasie/contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+          <button onclick="toggleMenu()">&#9776;</button>
+          <ul id="primaryNav" class="hide">
+              <li><a
+                      href="https://edenborrowman.github.io/assignments/perkasie/index.html">Home</a></li>
+               <li><a href="https://edenborrowman.github.io/assignments/perkasie/perkasie.html">Perkasie</a></li>
+              <li><a href="https://edenborrowman.github.io/assignments/perkasie/join.html">Join</a>
+              </li>
+              <li><a href="https://edenborrowman.github.io/assignments/pennridge_outdoor/directory.html">Directory</a></li>
+              <li><a href="https://edenborrowman.github.io/assignments/perkasie/contact.html">Contact</a>
+              </li>
+          </ul>
+      </nav>
     </header>
-
     <main class="index_main">
         <div class="herodiv">
             <picture>
@@ -67,12 +68,24 @@
                 <span> <span id="speed"></span> mph </span>
                 <span id="windchill">Wind Chill:</span>
                 <span id="windchill_num"></span>
-            </section>
-        </div>
-        <h1 class="textflare">Our Partners</h1>
+              </section>
+            </div>
+    
+        <h1>Thank you for your message</h1>
+        
+        <p>You will hear from a member of the committee within five business days.</p>
 
-        <div class="cards"></div>
+
+        <div id="mapdiv">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d94731.53967909195!2d-111.880325!3d42.099747!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612414617377!5m2!1sen!2sus"
+                width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+
+           
+        </div>
     </main>
+       
 
     <!---------------------------- Footer -------------------------->
     <footer>
@@ -88,7 +101,8 @@
             <a
                 href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"><img
                     class="smicon" src="images/Github.png" alt="git hub icon" /></a>
-            <a href="https://twitter.com/"><img class="smicon" src="images/Twitter.png" alt="twitter icon" /></a>
+            <a href="https://twitter.com/"><img class="smicon" src="images/Twitter.png"
+                    alt="twitter icon" /></a>
             <a href="https://www.instagram.com/"><img class="smicon" src="images/Instagram.png"
                     alt="instagram icon" /></a>
             <a href="https://www.facebook.com/"><img class="smicon" loading="lazy" src="images/Facebook.png"
@@ -96,13 +110,14 @@
         </section>
         <p>
             &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
-
+            
         </p>
         <span id="currentdate"></span><br /><br />
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/weatherapi.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/forecast.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({

@@ -1,157 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Perkasie Borough Chamber of Commerce Contact Page</title>
-    <meta name="A community-friendly page with weather, news, and information for the Preston, Idaho community." />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="A community-friendly page with weather, news, and information for the Preston, Idaho community."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_package/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_package/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_package/favicon-16x16.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-  
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-      <span id="weather_alert">Announcement</span>
-        <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->
-       
+      <div id="header_org">
+        <img
+          id="headerimg"
+          src="images/logo.svg"
+          alt="The Perkasie Borough Chamber logo, a compas"
+        />
         <section class="headings1">
-            <img id="headerimg" src="images/logo.svg" alt="The Perkasie Borough Chamber logo, a compas" />
-           <h1 class="headertitle1">Perkasie Borough</h1>
-            <br />
+          <hr class="headerline" />
+
+          <h1 class="headertitle1">Perkasie Borough</h1>
+          <br />
         </section>
         <div class="headings2">
-            <h2 class="headertitle2">
-                Chamber Of Commerce
-            </h2>
+          <h2 class="headertitle2">Chamber Of Commerce</h2>
         </div>
-        <nav id="headernav">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a
-                        href="https://edenborrowman.github.io/assignments/perkasie/index.html">Home</a></li>
-                 <li><a href="https://edenborrowman.github.io/assignments/perkasie/perkasie.html">Perkasie</a></li>
-                <li><a href="https://edenborrowman.github.io/assignments/perkasie/join.html">Join</a>
-                </li>
-                <li><a href="https://edenborrowman.github.io/assignments/perkasie/directory.html">Directory</a></li>
-                <li class="active"><a href="https://edenborrowman.github.io/assignments/perkasie/contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      </div>
+      <nav id="headernav">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li>
+            <a
+              href="https://edenborrowman.github.io/assignments/perkasie/index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://edenborrowman.github.io/assignments/perkasie/perkasie.html"
+              >Perkasie</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://edenborrowman.github.io/assignments/perkasie/join.html"
+              >Join</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://edenborrowman.github.io/assignments/perkasie/directory.html"
+              >Directory</a
+            >
+          </li>
+          <li class="active">
+            <a
+              href="https://edenborrowman.github.io/assignments/perkasie/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="index_main">
-        <div class="herodiv">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/bridge400.jpg" />
-                <source media="(max-width: 800px)" srcset="images/bridge800.jpg" />
-                <source media="(max-width: 1200px)" srcset="images/bridge1200.jpg" />
-                <img class="heroimg" src="images/bridge1200.jpg" alt="covered red bridge" loading="lazy" />
-            </picture>
-            <section class="weathersummary">
-                <h3 id="weather_summary">Weather Summary</h3>
-                <span id="current"> Current Condition:</span>
-                <span id="cond"></span>
-                <span id="high">Temperature:</span>
-                <span> <span id="temp"></span>&deg; F </span>
-                <span id="humidity">Humidity:</span>
-                <span id="humid_pct"></span>
-                <span id="wind">Wind Speed:</span>
-                <span> <span id="speed"></span> mph </span>
-                <span id="windchill">Wind Chill:</span>
-                <span id="windchill_num"></span>
-              </section>
-            </div>
+      <div class="herodiv">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/bridge400.jpg" />
+          <source media="(max-width: 800px)" srcset="images/bridge800.jpg" />
+          <source media="(max-width: 1200px)" srcset="images/bridge1200.jpg" />
+          <img
+            class="heroimg"
+            src="images/bridge1200.jpg"
+            alt="covered red bridge"
+            loading="lazy"
+          />
+        </picture>
+        <section class="weathersummary">
+          <h3 id="weather_summary">Weather Summary</h3>
+          <span id="current"> Current Condition:</span>
+          <span id="cond"></span>
+          <span id="high">Temperature:</span>
+          <span> <span id="temp"></span>&deg; F </span>
+          <span id="humidity">Humidity:</span>
+          <span id="humid_pct"></span>
+          <span id="wind">Wind Speed:</span>
+          <span> <span id="speed"></span> mph </span>
+          <span id="windchill">Wind Chill:</span>
+          <span id="windchill_num"></span>
+        </section>
+      </div>
 
-            <h1 class="h1sc">Join Us!</h1>
+      <h1>Contact</h1>
+      <hr class="home_line" />
+      <div id="directors">
+        <h3 id="textflare5" class="textflare">Board of Directors</h3>
+        <p id="board">
+          Jonathon Ranklin: President<br />
+          Maribel Lopez: Vice President<br />
+          Kate Carter-Parik: Director of Advertising<br />
+          Kellan Theata: Director of Membership<br />
+          Phil Parker: Social Committee Head<br />
+          Natalie Buttler: Communications<br />
+          TyReese Johnson: City Council Liaison<br />
+        </p>
+      </div>
 
-            <h3>Welcome to the Perkasie Borough Chamber of Commerce inquiry page. We are happy to know of your interest in joining our association. Please feel out the following form and you will be contacted by a member of the onboarding committee within five business days. </h3>
-            <!--------------------------- Storm Center Form ----------------------->
-            <div class="formdiv">
-                <form method="get" action="thanks.html">
-                    <fieldset>
-                        <legend class="legendtitle">Personal Information</legend>
-                        <label class="top">First Name*<input type="text" name="fname" required></label>
-                        <label class="top">Last Name*:<input type="text" name="lname" required /> </label>
-                        <label class="top">Title:<input type="text" name="lname"/> </label>
-                        <label class="top">Email Address*:<input type="text" name="email" required /> </label>
-                        <label class="top">Cell Phone<input type="tel" name="phone" placeholder="5555555555"/>
-                        </label>
-                        
-                    </fieldset>
-                    <fieldset>
-                        <legend class="legendtitle">Business Information</legend>
-                        
-                        <label class="top">
-                            Business Name*<input type="text" name="bus_name" placeholder="ACME Anvils" required />
-                        </label>
-                        <label class="top">
-                            Business Address<input type="text" name="bus_ad" placeholder="55 Walnut St, Perkasie, PA 18944" />
-                            <label class="top">
-                                Website<input type="text" name="web" placeholder="www.business.com" />
-                        </label>
-                        </legend>
-                            <label class="top">Please tell us about your business<input type="text" class="txtarea"></label>
-                        
-                            
-    
-                    </fieldset>
-                    <fieldset>
-                        <legend class="legendtitle">Membership Level</legend>
-                        <label class="top">User in Danger</label>
-                        <!-- name left the same on all radio buttons. This means when one is selected, the other gets deselected. Otherwise you could click them all. -->
-                        <label class="sbs"><input type="radio" name="membership" value="yes" />&nbsp; Non Profit ($100)</label>
-                        <label class="sbs"><input type="radio" name="membership" value="no" />&nbsp; Bronze ($200)</label>
-                        <label class="sbs"><input type="radio" name="membership" value="maybe" />&nbsp; Silver($400)</label>
-                        <label class="sbs"><input type="radio" name="membership" value="maybe" />&nbsp; Gold($1,000)</label>
-    
-                       
-                    <fieldset id="comments">
-                        <legend class="legendtitle">Additional Comments</legend>
-                        <label><input type="text" class="txtarea"></label>
-                    </fieldset>
-                    <input type="submit" value="Become a Member" class="submitBtn">
-                </form>
-            </div>
+      <div class="formdiv">
+        <form method="get" action="thanks2.html">
+          <fieldset>
+            <legend class="legendtitle">Contact Information</legend>
+            <label class="top"
+              >First Name*<input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last Name*:<input type="text" name="lname" required />
+            </label>
+            <label class="top"
+              >Email Address*:<input type="text" name="email" required />
+            </label>
+            <label class="top"
+              >Cell Phone<input
+                type="tel"
+                name="phone"
+                placeholder="5555555555"
+              />
+            </label>
+          </fieldset>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24319.55274721122!2d-75.31066349448857!3d40.365763973253955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c41e5341101ed9%3A0xcaea757af06fa9b8!2sPerkasie%2C%20PA%2018944!5e0!3m2!1sen!2sus!4v1617662741723!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    
-            
+          <fieldset id="comments">
+            <legend class="legendtitle">Comments</legend>
+            <label><input type="text" class="txtarea" /></label>
+          </fieldset>
+          <input type="submit" value="Send Feedback" class="submitBtn" />
+        </form>
+      </div>
+
+      <div id="mapdiv">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24319.55274721122!2d-75.31066349448857!3d40.365763973253955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c41e5341101ed9%3A0xcaea757af06fa9b8!2sPerkasie%2C%20PA%2018944!5e0!3m2!1sen!2sus!4v1617662741723!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="
+                  lazy"
+        ></iframe>
+
+        <section id="contact_info">
+          <h4>We'd love to hear from you!</h4>
+          <p>
+            Pennridge Outdoor<br />
+            55 Main St<br />
+            Perkasie, PA 18944<br /><br />
+            &#9742; &nbsp; 208 555-5555<br /><br />
+            &#9993; &nbsp; penn@pennridgeoutdoor.com<br />
+          </p>
+          <a
+            href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"
+            ><img class="smicon" src="images/Github.png" alt="git hub icon"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img class="smicon" src="images/Twitter.png" alt="twitter icon"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              class="smicon"
+              src="images/Instagram.png"
+              alt="instagram icon"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img
+              class="smicon"
+              loading="lazy"
+              src="images/Facebook.png"
+              alt="facebook icon"
+          /></a>
+        </section>
+      </div>
     </main>
 
     <!---------------------------- Footer -------------------------->
     <footer>
-        <section id="contact_info">
-            <h4>Contact Us!</h4>
-            <p>
-                Perkasie Borough Chamber of Commerce<br />
-                55 Main St<br />
-                Perkasie, PA 18944<br /><br />
-                &#9742; &nbsp; 208 555-5555<br /><br />
-                &#9993; &nbsp; perk@perkasiechamber.com<br />
-            </p>
-            <a
-                href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"><img
-                    class="smicon" src="images/Github.png" alt="git hub icon" /></a>
-            <a href="https://twitter.com/"><img class="smicon" src="images/Twitter.png"
-                    alt="twitter icon" /></a>
-            <a href="https://www.instagram.com/"><img class="smicon" src="images/Instagram.png"
-                    alt="instagram icon" /></a>
-            <a href="https://www.facebook.com/"><img class="smicon" loading="lazy" src="images/Facebook.png"
-                    alt="facebook icon" /></a>
-        </section>
+      <section id="contact_info">
+        <h4>Contact Us!</h4>
         <p>
-            &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
-            
+          Perkasie Borough Chamber of Commerce<br />
+          55 Main St<br />
+          Perkasie, PA 18944<br /><br />
+          &#9742; &nbsp; 208 555-5555<br /><br />
+          &#9993; &nbsp; perk@perkasiechamber.com<br />
         </p>
-        <span id="currentdate"></span><br /><br />
+        <a
+          href="https://github.com/edenborrowman/edenborrowman.github.io/blob/master/assignments/lesson1/index.html"
+          ><img class="smicon" src="images/Github.png" alt="git hub icon"
+        /></a>
+        <a href="https://twitter.com/"
+          ><img class="smicon" src="images/Twitter.png" alt="twitter icon"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img class="smicon" src="images/Instagram.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.facebook.com/"
+          ><img
+            class="smicon"
+            loading="lazy"
+            src="images/Facebook.png"
+            alt="facebook icon"
+        /></a>
+      </section>
+      <p>
+        &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+      </p>
+      <span id="currentdate"></span><br /><br />
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/weatherapi.js"></script>
@@ -159,12 +240,16 @@
     <script src="js/forecast.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-        WebFont.load({
-            google: {
-                families: ["Big Shoulders Display", "Bodoni Moda", "Poppins", "Allura"],
-            },
-        });
+      WebFont.load({
+        google: {
+          families: [
+            "Big Shoulders Display",
+            "Bodoni Moda",
+            "Poppins",
+            "Allura",
+          ],
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>

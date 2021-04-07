@@ -12,6 +12,7 @@ fetch(apiURL)
     document.getElementById("temp").textContent = Math.round(jo.current.temp);
     document.getElementById("speed").textContent = Math.round(jo.current.wind_speed);
     document.getElementById("humid_pct").textContent = jo.current.humidity + "%";
+    document.getElementById("weather_alert").textContent = jo.alerts[0].description;
 
  //WINDCHILL
 
@@ -29,15 +30,15 @@ fetch(apiURL)
       document.getElementById("windchill_num").innerHTML = wc;
     }
    
-//FIVE DAY FORECAST DATA
+//THREE DAY FORECAST DATA
 
 
     const dayName = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     let d = new Date();
-    let d_name1 = dayName[d.getDay() + 1];
-    let d_name2 = dayName[d.getDay() + 2];
-    let d_name3 = dayName[d.getDay() + 3];
+    let d_name1 = dayName[(d.getDay() + 1) % 7];
+    let d_name2 = dayName[(d.getDay() + 2) % 7];
+    let d_name3 = dayName[(d.getDay() + 3) % 7];
 
     document.getElementById("day1").textContent = d_name1;
     document.getElementById("day2").textContent = d_name2;
@@ -77,6 +78,11 @@ fetch(apiURL)
     
   });
 
+  // WEATHER ALERT
+function windowclose() {
+  document.getElementById("alert_div").setAttribute("id", "dismiss");
+}
+  
   
 
 
