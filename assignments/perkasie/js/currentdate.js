@@ -25,11 +25,20 @@ let d = new Date();
 let dayName = daynames[d.getDay()];
 let monthName = months[d.getMonth()];
 let fulldate =
-  dayName + ", " + monthName + " " + d.getDate() + ", " + d.getFullYear();
+  dayName +
+  ", " +
+  monthName +
+  " " +
+  d.getDate() +
+  ", " +
+  d.getFullYear();
 
 document.getElementById("currentdate").textContent = fulldate;
 
 document.getElementById("currentyear").textContent = d.getFullYear();
+
+let oLastModif = new Date(document.lastModified);
+document.getElementById("lastModified").textContent = oLastModif;
 
 function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("hide");
