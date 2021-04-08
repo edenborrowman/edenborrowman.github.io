@@ -128,7 +128,11 @@
     max-width: 1200px;
     padding: 0 1rem 1rem 1rem;
   }
-  
+  .index_main {
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
   div.herodiv {
     position: relative;
     margin-left: auto;
@@ -136,6 +140,7 @@
     margin-top: -1rem;
     margin-bottom: 4rem;
     text-align: center;
+    z-index: -1;
     }
 
     .weathersummary {
@@ -165,7 +170,7 @@
   .heroimg {
     min-height: 300px;
     object-fit: cover;
-    max-width: 100%
+    max-width: 100%;
     
   }
 
