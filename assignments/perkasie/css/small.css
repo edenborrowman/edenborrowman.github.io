@@ -210,6 +210,9 @@
   #flare1 {
       text-align: right;
   }
+  #flare2 {
+    padding-top: 8rem;
+  }
   #lion {
       margin: auto;
       width: 95%;     
@@ -262,12 +265,13 @@
   }
   #flare3 {
       text-align: right;
+      padding-top: 8rem;
   }
   a:link{
     text-decoration: none;
   }
   a:visited {
-    color: #497802;
+    color: #A2BF63;
   }
   a:hover {
     background-color:#a2bf63;
@@ -520,8 +524,10 @@
 
   #index_gallery {
 
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color:#a2bf63;
+    
     
   }
   #index_chamber {
@@ -530,7 +536,6 @@
 
   section.farmer {
     margin-bottom: 16rem;
-    margin-top: 8rem;
   }
   #tomatoes {
   width: 100%;
@@ -562,7 +567,6 @@
   .button_left, .button_right {
     border: none;
     display: inline-block;
-    padding: 8px 16px;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
@@ -572,12 +576,13 @@
     cursor: pointer;
     white-space: nowrap;
     padding: 1rem;
+   
 }
 
 
 .button_left {
   position: absolute;
-  top: 55%;
+  top: 75%;
   left: 0%;
   transform: translate(0%,-50%);
   -ms-transform: translate(-0%,-50%);
@@ -585,7 +590,7 @@
 
 .button_right {
   position: absolute;
-  top: 55%;
+  top: 75%;
   right: 0%;
   transform: translate(0%,-50%);
   -ms-transform: translate(0%,-50%);
@@ -625,4 +630,12 @@ p#best {
   text-align: center;
   margin-bottom: 8rem;
   margin-top: 8rem;
+}
+
+#join_div{
+  background-color:#a2bf63;
+  color: #000033;
+  padding: 2rem;
+  margin-bottom: 8rem;
+  margin-top: 4rem;
 }

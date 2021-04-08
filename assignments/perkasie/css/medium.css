@@ -70,12 +70,12 @@ img#headerimg {
         background-color:#A2bf63;
       }
      
-    td#dayofweek1 {
+    td#day1 {
       padding: 1rem;
     }
     
     td#forecast1{
-      padding: 1rem;
+      padding: 2rem;
     }
       table.center {
         margin-left: auto;
@@ -91,9 +91,10 @@ img#headerimg {
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr 1fr 1fr;
           grid-column-gap: 5rem;
+          margin-bottom: 0;
         }
 
-        #index_gallery {
+      #index_gallery {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr 1fr;
@@ -123,6 +124,7 @@ img#headerimg {
           grid-column: 2/3;
           grid-row: 1;
           align-items: start;
+          padding-top: 0;
         }
     
         img#lion {
