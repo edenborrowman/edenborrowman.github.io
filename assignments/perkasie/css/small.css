@@ -558,6 +558,7 @@
   .slideshow {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 8rem;
     max-width: 980px;
 
   }
@@ -640,4 +641,15 @@ p#best {
 
 #h4_toggle {
   display: none;
+}
+
+aside#current_stats{
+  background-color:#497802;
+  color: white;
+  max-width: 15rem;
+  padding: 2rem;
+  justify-self: end;
+  margin-bottom: 3rem;
+      
+  
 }

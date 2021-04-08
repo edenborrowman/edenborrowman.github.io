@@ -305,7 +305,16 @@ img#headerimg {
           display: block;
         }
 
-        
+        .about_perkasie {
+          margin-top: 8rem;
+        }
+        aside#current_stats{
+          float: right;
+          margin-left: 2%;      
+          
+        }
+
+            
        }
 
   
