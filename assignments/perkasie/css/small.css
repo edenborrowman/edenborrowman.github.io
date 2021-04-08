@@ -665,7 +665,10 @@ aside#current_stats{
   max-width: 15rem;
   padding: 2rem;
   justify-self: end;
-  margin-bottom: 3rem;
-      
-  
+  margin-bottom: 3rem; 
+}
+
+.board {
+  max-width: 20rem;
+  padding: 1rem;
 }
