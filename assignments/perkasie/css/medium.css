@@ -74,7 +74,7 @@ img#headerimg {
       padding: 1rem;
     }
     
-    td#forecast1{
+    td#forecast1, td#forecast2, td#forecast3{
       padding: 2rem;
     }
       table.center {
