@@ -217,7 +217,6 @@
       margin: auto;
       width: 95%;     
   }
-
   div#lion_div {
     margin-top: 16rem;
     margin-bottom: 8rem;
@@ -433,7 +432,6 @@
       height: 120px;
       border: solid 1px #999;
       border-radius: 4px;
-      padding: .75rem;
       color: #555;
   }
   
@@ -638,4 +636,8 @@ p#best {
   padding: 2rem;
   margin-bottom: 8rem;
   margin-top: 4rem;
+}
+
+#h4_toggle {
+  display: none;
 }

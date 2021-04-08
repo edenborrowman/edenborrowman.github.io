@@ -301,6 +301,10 @@ img#headerimg {
           grid-column: 1 / span 2;
         }
 
+        #h4_toggle {
+          display: block;
+        }
+
         
        }
 
