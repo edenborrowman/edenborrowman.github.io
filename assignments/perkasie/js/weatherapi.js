@@ -74,8 +74,13 @@ fetch(apiURL)
     
     document.getElementById("img3").textContent = imagesrc3;
     document.getElementById("icon3").setAttribute("src", imagesrc3);
-    document.getElementById("icon3").setAttribute("alt", "filler");    
+    document.getElementById("icon3").setAttribute("alt", "filler"); 
+    
+    if (jo.alerts == undefined) {
+    document.getElementById("alert_div").setAttribute("id", "no_display")}
+    else {
     document.getElementById("weather_alert").textContent = jo.alerts[0].description;
+    }
     
   });
 

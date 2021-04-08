@@ -186,6 +186,9 @@
       width: 75%;
       color: black;
   }
+  #no_display{
+    display: none;
+  }
 
   #gridbut{
     display: none;
