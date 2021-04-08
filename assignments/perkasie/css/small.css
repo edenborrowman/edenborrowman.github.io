@@ -563,6 +563,10 @@
 
   }
 
+  .slide_imgs {
+    width: 100%;
+  }
+
   .button_left, .button_right {
     border: none;
     display: inline-block;
